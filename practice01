@@ -1,4 +1,5 @@
 Learn the Command Line
+https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/File_System_Utilities#cd
 
 1.
 Let's continue with more commands. In the terminal, print the working directory.
@@ -12,3 +13,34 @@ List all files and directories in the working directory.
 
 $ pwd
 /home/ccuser/workspace/blog
+
+
+
+$ cd ..
+To move up one directory, use cd ... Here, cd .. navigates up from jan/memory/ to jan/.
+
+Make sure you are in the directory /home/ccuser/workspace/blog/2018/jan by using the command pwd.
+
+Instructions
+1.
+Once you are in /home/ccuser/workspace/blog/2018/jan, change the directory to the 2018/feb/ directory using:
+
+cd ../feb
+List all files and directories in the working directory.
+
+Type pwd into the terminal to see where you are.
+
+If you are in /home/ccuser/workspace/blog/, then enter the command cd 2018 followed by: cd jan before moving on to the checkpoints.
+
+2.
+Type:
+
+mkdir media
+Again, list all files and directories in the working directory. You'll see that there is now a new directory named media/.
+
+
+$ mkdir foo
+$ cd foo
+$ mkdir bar
+
+
