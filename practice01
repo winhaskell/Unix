@@ -1,5 +1,6 @@
 Learn the Command Line
 https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/File_System_Utilities#cd
+http://pubs.opengroup.org/onlinepubs/9699919799/utilities/mkdir.html
 
 1.
 Let's continue with more commands. In the terminal, print the working directory.
