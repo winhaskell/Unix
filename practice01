@@ -50,4 +50,14 @@ $ mkdir bar
 cd ..
 回到目录路径的上一级路径
 
+Once you are in /home/ccuser/workspace/blog/2018/jan, change the directory to the 2018/feb/ directory using:
+
+cd ../feb
+/home/ccuser/workspace/blog/2018/feb/
+
+
+Type:
+
+mkdir media
+Again, list all files and directories in the working directory. You'll see that there is now a new directory named media/.
 
