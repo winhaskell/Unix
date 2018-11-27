@@ -69,8 +69,6 @@ Downhill biking is dangerous: In the downhill/ directory, make a directory calle
 
 $ mkdir safety
 
-
-
 mkdir
 This command will make a new subdirectory.
 
@@ -81,3 +79,37 @@ To create a subdirectory named morestuff in the existing directory named /tmp, e
 
  mkdir /tmp/morestuff 
  
+ 
+12.
+Change directories to the bicycle-world-ii/ directory.
+
+13.
+List the contents of the bicycle-world-ii/ directory.
+
+$ ls
+brands.txt  freight  mountain  racing
+
+
+14.
+The shop is adding a new type of bike!
+
+In bicycle-world-ii/, make a directory called bmx/.
+
+$ mkdir bmx
+
+15.
+Without changing directories from bicycle-world-ii/, make a file in the bmx/ directory called tricks.txt.
+
+$ touch bmx/tricks.txt
+
+16.
+List all files and directories in the current directory.
+
+$ ls
+bmx  brands.txt  freight  mountain  racing
+
+
+17.
+Click here for a video walkthrough from our experts to help you check your work!
+
+
