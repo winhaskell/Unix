@@ -1,0 +1,29 @@
+Mark the tasks as complete by checking them off
+
+1.
+Print the working directory.
+
+If you ever get lost, you can return to this directory using cd.
+
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+Return here by entering:
+
+$ cd /home/ccuser/workspace/bicycle-world-ii
+
+2.
+List the files and directories in the working directory.
+
+$ ls
+brands.txt  freight  mountain  racing
+
+3.
+Change directories to the freight/ directory.
+
+$ cd freight
+
+4.
+List the files and directories in the working directory.
+
+$ ls
+messenger  porteur
