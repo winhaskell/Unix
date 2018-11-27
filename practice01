@@ -61,3 +61,29 @@ Type:
 mkdir media
 Again, list all files and directories in the working directory. You'll see that there is now a new directory named media/.
 
+
+mkdir
+$ mkdir media
+The mkdir command stands for "make directory". It takes in a directory name as an argument, 
+and then creates a new directory in the current working directory.
+
+Here we used mkdir to create a new directory named media/ inside the feb/ directory.
+
+Instructions
+1.
+Navigate to the 2018/dec/ directory using cd.
+
+List all files and directories in the working directory to see what is in there currently.
+
+2.
+Then type:
+
+touch keyboard.txt
+Again, list all files and directories in the working directory. You'll see that there is now a new file named keyboard.txt.
+
+
+touch
+touch keyboard.txt
+The touch command creates a new file inside the working directory. It takes in a filename as an argument, and then creates an empty file in the current working directory.
+
+Here we used touch to create a new file named keyboard.txt inside the 2018/dec/ directory.
