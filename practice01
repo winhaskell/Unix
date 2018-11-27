@@ -1,0 +1,14 @@
+Learn the Command Line
+
+1.
+Let's continue with more commands. In the terminal, print the working directory.
+
+$ ls
+2014  2015  hardware.txt
+
+
+2.
+List all files and directories in the working directory.
+
+$ pwd
+/home/ccuser/workspace/blog
