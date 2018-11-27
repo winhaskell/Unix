@@ -27,3 +27,57 @@ List the files and directories in the working directory.
 
 $ ls
 messenger  porteur
+
+5.
+Change directories to the porteur/ directory.
+
+$ cd porteur
+
+6.
+Change directories up two levels to the bicycle-world-ii/ directory.
+
+List the files and directories in the bicycle-world-ii/ directory.
+
+$ cd ../..
+$ ls
+brands.txt  freight  mountain  racing
+If you see an error like No such file or directory, you might be in the wrong directory! Use cd ../.. from within porteur/.
+
+7.
+Change directories to the mountain/downhill/ directory.
+
+$ cd mountain/downhill
+
+8.
+Make a file called dirt.txt.
+
+$ touch dirt.txt
+
+9.
+Make a file called mud.txt.
+
+$ touch mud.txt
+
+10.
+List the files and directories in the downhill/ directory.
+
+$ ls
+dirt.txt  heavyweight  lightweight  mud.txt
+
+11.
+Downhill biking is dangerous: In the downhill/ directory, make a directory called safety/.
+
+$ mkdir safety
+
+
+
+mkdir
+This command will make a new subdirectory.
+
+To create a subdirectory named mystuff in the current directory, enter:
+
+ mkdir mystuff 
+To create a subdirectory named morestuff in the existing directory named /tmp, enter:
+
+ mkdir /tmp/morestuff 
+ 
