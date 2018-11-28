@@ -195,3 +195,9 @@ What commands would sort the contents the file greatest.txt and print them?
 cat greatest.txt | sort
 
 
+How would you pipe the results of one command to another?
+command | command
+
+
+You made it! Quiz Scorecard 60%
+Practice makes perfect!
