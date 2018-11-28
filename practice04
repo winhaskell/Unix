@@ -321,3 +321,94 @@ Now type
 ll
 
 
+
+Aliases II
+What happens when you store the following aliases in ~/.bash_profile?
+
+alias hy="history"
+hy is set as alias for the history command in the bash profile. The alias is then made available in the current session through source. By typing hy, the command line outputs a history of commands that were entered in the current session.
+
+alias ll="ls -la"
+ll is set as an alias for ls -la and made available in the current session through source. By typing ll, the command line now outputs all contents and directories in long format, including all hidden files.
+
+Instructions
+1.
+Now that you are familiar with configuring greetings and aliases, let's move on to setting environment variables.
+
+Open ~/.bash_profile in nano.
+
+2.
+In the bash profile, beneath the aliases, on a new line, type
+
+export USER="Jane Doe"
+Feel free to use your own name.  // USER="Jane Doe" 修改使用者
+
+Save the file.
+
+Press Enter to write the filename.
+
+Exit nano.
+
+Finally, clear the terminal.
+
+3.
+In the command line, use source to activate the changes in the bash profile for the current session. 
+
+4.
+Type
+
+echo $USER  // 查询出修改的使用者
+This should return the value of the variable that you set.
+
+(Tip: If you are unable to type $, you can find help here.)
+
+
+nano ~/.bash_profile  编辑文件
+
+
+
+Environment Variables
+What happens when you store this in ~/.bash_profile?
+
+export USER="Jane Doe"
+environment variables are variables that can be used across commands and programs and hold information about the environment.
+
+The line USER="Jane Doe" sets the environment variable USER to a name "Jane Doe". Usually the USER variable is set to the name of the computer's owner.
+The line export makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs.
+At the command line, the command echo $USER returns the value of the variable. Note that $ is always used when returning a variable's value. Here, the command echo $USER returns the name set for the variable.
+Instructions
+1.
+Let's learn a few more environment variables, starting with the variable for the command prompt.
+
+Open ~/.bash_profile in nano.
+
+
+nano ~/.bash_profile  编辑文件
+
+2.
+On a new line, beneath the last entry, type
+
+export PS1=">> "
+Save the file.
+
+Press Enter to write the filename.
+
+Exit nano
+
+Finally, clear the terminal window.
+
+3.
+In the command line, use source to activate the changes in the bash profile for the current shell session.
+
+4.
+Let's try out the new command prompt. In the terminal type
+
+echo "hello"
+
+5.
+Now type
+
+ls -alt
+Did you notice that the prompt has changed?
+
+
