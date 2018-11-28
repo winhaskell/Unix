@@ -1,3 +1,6 @@
+https://www.techspot.com/guides/835-linux-command-line-basics/
+https://www.codecademy.com/learn/learn-the-command-line
+
 nano hello.txt
 
 This will open the nano text editor.
@@ -96,4 +99,13 @@ echo $PATH
 Return a list of environment variables.
 
 env
+
+
+
+nano ~/.bash_profile
+
+echo "Hello, Hola, Ni Hao, Bonjour, and Kon'nichiwa! Welcome to our translation services"
+Ctrl + O
+Enter
+Ctrl + X
 
