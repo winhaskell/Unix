@@ -412,3 +412,16 @@ ls -alt
 Did you notice that the prompt has changed?
 
 
+
+env
+What happens when you type this command?
+
+env
+The env command stands for "environment", and returns a list of the environment variables for the current user. 
+Here, the env command returns a number of variables, including PATH, PWD, PS1, and HOME.
+
+env | grep PATH
+env | grep PATH is a command that displays the value of a single environment variable. Here the standard output of env is "piped"
+to the grep command. grep searches for the value of the variable PATH and outputs it to the terminal.
+
+
