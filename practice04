@@ -139,9 +139,9 @@ In the bash profile, add a greeting of your choice.
 Save the bash profile, exit nano, and clear the terminal window.
 
 echo "Hello, Hola, Ni Hao, Bonjour, and Kon'nichiwa! Welcome to our translation services"
-Ctrl + O
+Ctrl + O  保存文件
 Enter
-Ctrl + X
+Ctrl + X  退出文件
 
 4.
 Source the bash profile to make the greeting available in the current session. You should see the greeting you creating in the above step.
@@ -226,4 +226,98 @@ env
 Last but not least, return the value for the environment variable for LESS.
 
 env | grep LESS
+
+
+
+Bash Profile
+You created a file in nano called ~/.bash_profile and added a greeting. How does this work?
+
+$ nano ~/.bash_profile
+~/.bash_profile is the name of file used to store environment settings. It is commonly called the "bash profile". When a session starts, it will load the contents of the bash profile before executing commands.
+
+The ~ represents the user's home directory.
+The . indicates a hidden file.
+The name ~/.bash_profile is important, since this is how the command line recognizes the bash profile.
+The command nano ~/.bash_profile opens up ~/.bash_profile in nano.
+The text echo "Welcome, Jane Doe" creates a greeting in the bash profile, which is saved. It tells the command line to echo the string "Welcome, Jane Doe" when a terminal session begins.
+The command source ~/.bash_profile activates the changes in ~/.bash_profile for the current session. Instead of closing the terminal and needing to start a new session, source makes the changes available right away in the session we are in.
+Instructions
+1.
+Now that we know what bash profile is, let's continue configuring the environment by adding command aliases.
+
+Open ~/.bash_profile in nano.
+
+2.
+In ~/.bash_profile, beneath the greeting you created, type
+
+alias pd="pwd"
+Save the file.
+
+Press Enter to write the filename
+
+Exit nano.
+
+Clear the terminal window.
+
+3.
+In the command line, use the source command to activate the changes in the current session.
+
+source ~/.bash_profile
+4.
+Let's try out the alias. Type
+
+pd
+You should see the same output as you would by typing the pwd command.
+
+
+
+
+Aliases I
+What happens when you store this alias in ~/.bash_profile?
+
+alias pd="pwd"
+The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands.
+
+Here alias pd="pwd" creates the alias pd for the pwd command, which is then saved in the bash profile. Each time you enter pd, the output will be the same as the pwd command.
+The command source ~/.bash_profile makes the alias pd available in the current session.
+Each time we open up the terminal, we can use the pd alias.
+
+Instructions
+
+1.
+Let's practice aliases some more. Open ~/.bash_profile in nano.
+
+2.
+In the bash profile, beneath the previous alias, add
+
+alias hy="history"
+Save the file.
+
+Press Enter to write the filename.
+
+3.
+Add another alias
+
+alias ll="ls -la"
+Save the file.
+
+Press Enter to write the filename.
+
+Exit nano
+
+Clear the terminal window.
+
+4.
+In the command line, use source to activate the changes to the bash profile for the current session.
+
+5.
+Let's try out the aliases. In the command line, type
+
+hy
+
+6.
+Now type
+
+ll
+
 
