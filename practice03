@@ -88,3 +88,26 @@ grep -R player .
 Use cat to view the contents of games.txt. Then, use sed to replace all instances of the word 'loss' with 'win' in games.txt.
 
 sed 's/loss/win/' games.txt
+
+
+
+grep II
+$ grep -R Arctic /home/ccuser/workspace/geography
+grep -R searches all files in a directory and outputs filenames and lines containing matched results. -R stands for "recursive". Here grep -R searches the /home/ccuser/workspace/geography directory for the string "Arctic" and outputs filenames and lines with matched results.
+
+$ grep -Rl Arctic /home/ccuser/workspace/geography
+grep -Rl searches all files in a directory and outputs only filenames with matched results. -R stands for "recursive" and l stands for "files with matches". Here grep -Rl searches the /home/ccuser/workspace/geography directory for the string "Arctic" and outputs filenames with matched results.
+
+Instructions
+1.
+Use cat to display the contents of forests.txt
+
+2.
+In the terminal, type
+
+sed 's/snow/rain/' forests.txt
+3.
+Now type
+
+sed 's/snow/rain/g' forests.txt
+
