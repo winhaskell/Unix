@@ -171,3 +171,27 @@ echo "Lamar" > greatest.txt
 What does the s stand for in the 's/Hopsin/Kanye' part of sed 's/Hopsin/Kanye'
 Substitute
 
+
+What command searches all files recursively for Gambino?
+grep -R Gambino .
+
+
+Append the string "Aesop Rock" to the file greatest.txt
+echo "Aesop Rock" >> greatest.txt
+
+Search the file greatest.txt for Earl then send the results to the file oddfuture.txt
+grep Earl greatest.txt >> oddfuture.txt
+
+
+What does the < symbol do?
+Redirect input to a command
+
+
+The uniq command removes duplicates __
+Only if they are adjacent
+
+
+What commands would sort the contents the file greatest.txt and print them?
+cat greatest.txt | sort
+
+
