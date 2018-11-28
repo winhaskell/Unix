@@ -115,3 +115,44 @@ sed 's/snow/rain/g' forests.txt
 What command searches all files recursively for Gambino?
 grep -R Gambino .
 
+
+grep I
+$ grep Mount mountains.txt
+grep stands for "global regular expression print". It searches files for lines that match a pattern and returns the results. It is also case sensitive. Here, grep searches for "Mount" in mountains.txt.
+
+$ grep -i Mount mountains.txt
+grep -i enables the command to be case insensitive. Here, grep searches for capital or lowercase strings that match Mount in mountains.txt.
+
+The above commands are a great way to get started with grep. If you are familiar with regular expressions, you can use regular expressions to search for patterns in files.
+
+Instructions
+1.
+grep can also be used to search within a directory. In the terminal, type
+
+grep -R Arctic /home/ccuser/workspace/geography
+2.
+Then type
+
+grep -Rl Arctic /home/ccuser/workspace/geography
+
+
+
+
+sed
+$ sed 's/snow/rain/' forests.txt
+sed stands for "stream editor". 
+It accepts standard input and modifies it based on an expression, before displaying it as output data. 
+It is similar to "find and replace".
+
+Let's look at the expression 's/snow/rain/':
+
+s: stands for "substitution". it is always used when using sed for substitution.
+snow: the search string, the text to find.
+rain: the replacement string, the text to add in place.
+In this case, sed searches forests.txt for the word "snow" and replaces it with "rain." 
+Importantly, the above command will only replace the first instance of "snow" on a line.
+
+$ sed 's/snow/rain/g' forests.txt
+The above command uses the g expression, meaning "global". Here sed searches forests.txt for the word "snow" and
+replaces it with "rain", globally. All instances of "snow" on a line will be turned to "rain".
+
