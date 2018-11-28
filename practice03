@@ -156,3 +156,9 @@ $ sed 's/snow/rain/g' forests.txt
 The above command uses the g expression, meaning "global". Here sed searches forests.txt for the word "snow" and
 replaces it with "rain", globally. All instances of "snow" on a line will be turned to "rain".
 
+
+
+sort: sorts lines of text alphabetically.
+uniq: filters duplicate, adjacent lines of text.
+grep: searches for a text pattern and outputs it.
+sed : searches for a text pattern, modifies it, and outputs it.
