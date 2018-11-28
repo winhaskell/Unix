@@ -109,3 +109,121 @@ Ctrl + O
 Enter
 Ctrl + X
 
+
+
+
+Lingua Franca
+Lingua Franca, a translation service, has asked you to help them configure their environment.
+
+If you get stuck during this project, check out the project walkthrough video which can be found at the bottom of the page 
+after the final step of the project.
+
+Tasks
+17/17Complete
+
+Mark the tasks as complete by checking them off
+
+1.
+Print the working directory.
+
+pwd
+
+2.
+Create and open the bash profile.
+
+nano ~/.bash_profile
+
+3.
+In the bash profile, add a greeting of your choice.
+
+Save the bash profile, exit nano, and clear the terminal window.
+
+echo "Hello, Hola, Ni Hao, Bonjour, and Kon'nichiwa! Welcome to our translation services"
+Ctrl + O
+Enter
+Ctrl + X
+
+4.
+Source the bash profile to make the greeting available in the current session. You should see the greeting you creating in the above step.
+
+source ~/.bash_profile
+
+5.
+Open the bash profile, and create three aliases, one for the mkdir command, one for date, and one for history.
+
+Save the bash profile, exit nano, and clear the terminal window.
+
+alias md="mkdir"
+alias d="date"
+alias hy="history"
+
+6.
+Source the bash profile to make the aliases available in the current session.
+
+source ~/.bash_profile
+
+7.
+Test out the aliases you created for the mkdir, date, and history commands. (Recall that when you test out the alias for mkdir you will need to pass in a directory name as an argument such as translations.)
+
+md translations
+d
+hy
+
+8.
+Type the less command, with the filename javanese.txt. After you do this, type q to quit.
+
+The less command is similar to cat, but is better adapted to handling larger files. It displays files in the terminal one page at a time.
+
+less javanese.txt
+q
+
+9.
+The less command is a special command that we can configure in the bash profile through the LESS environment variable.
+
+Open the bash profile, and create and export a new environment variable called LESS, setting it equal to the option "-N". 
+The -N option adds line numbers to the file.
+
+Save the bash profile, exit nano, and clear the terminal window.
+
+export LESS="-N"
+
+10.
+Source the bash profile to make the LESS line number option available for the current session.
+
+source ~/.bash_profile
+
+11.
+Type the less command again now, with the filename javanese.txt. The file should appear, along with line numbers. Press q to quit.
+
+less javanese.txt
+q
+
+12.
+Open the bash profile. Create and export the PS1 environment variable, setting it equal to a prompt of your choice. Be sure to leave a space before the close of the quotations.
+
+Save the bash profile, exit nano, and clear the terminal window.
+
+export PS1="c[○┬●]כ "
+
+13.
+Source the bash profile to make the new prompt available in the current session.
+
+source ~/.bash_profile
+
+14.
+Test out the prompt by typing the names of the aliases you created.
+
+md script
+d
+hy
+
+15.
+Return a list of environment variables.
+
+env
+
+16.
+Last but not least, return the value for the environment variable for LESS.
+
+env | grep LESS
+
