@@ -162,3 +162,12 @@ sort: sorts lines of text alphabetically.
 uniq: filters duplicate, adjacent lines of text.
 grep: searches for a text pattern and outputs it.
 sed : searches for a text pattern, modifies it, and outputs it.
+
+
+
+What command outputs the string "Lamar" to the file greatest.txt?
+echo "Lamar" > greatest.txt
+
+What does the s stand for in the 's/Hopsin/Kanye' part of sed 's/Hopsin/Kanye'
+Substitute
+
