@@ -581,4 +581,26 @@ bash(127)> cat sum-me.txt | xargs | sed -e 's/\ /+/g' | bc
 # recursively without the leading directory path.
 # 
 bash(0)> 
- 
+# Print all files in the current directory
+# recursively without the leading directory path.
+# 
+bash(0)> find . -type f -printf "%f\n"
+error.doc
+corporis.xls
+odit.doc
+animi.doc
+necessitatibus.doc
+totam
+beatae.flac
+README
+libero.xls
+# 👍 👍 👍  Correct!
+
+
+
+
+# You have a new challenge!
+# Rename all files removing the extension from
+# them in the current directory recursively.
+# 
+bash(0)>
