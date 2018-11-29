@@ -298,7 +298,6 @@ bash(0)> find . -name "access.log*"
 # 👍 👍 👍  Correct!
 
 
-
 # You have a new challenge!
 # Print all matching lines (without the filename
 # or the file path) in all files under the current
@@ -306,8 +305,54 @@ bash(0)> find . -name "access.log*"
 # contain the string "500". Note that there are no
 # files named "access.log" in the current directory,
 # you will need to search recursively.
+
+bash(0)> find . -name "access.log*" | xargs grep -h 500
+69.16.40.148 - - [09/Jan/2017:22:34:33 +0100] "GET /pages/create HTTP/1.0" 500 3471
+225.219.54.140 - - [09/Jan/2017:22:35:30 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 500 2477
+2.71.250.27 - - [09/Jan/2017:22:41:26 +0100] "GET /pages/create HTTP/1.0" 500 2477
+# 👍 👍 👍  Correct!
+
+ On your way to becoming a super-duper commandline hacker.
+ 
+ 
+# You have a new challenge!
+# Extract all IP addresses from files
+# that start with "access.log" printing one
+# IP address per line.
+ 
+bash(0)> find . -name "access.log*" | xargs grep -Eo '^[^ ]+' 
+
+./var/log/httpd/access.log:163.56.115.58
+./var/log/httpd/access.log:75.113.188.234
+./var/log/httpd/access.log:69.16.40.148
+./var/log/httpd/access.log:225.219.54.140
+./var/log/httpd/access.log:207.243.19.2
+./var/log/httpd/access.log:199.37.62.156
+./var/log/httpd/access.log:55.74.240.123
+./var/log/httpd/access.log:251.111.109.143
+./var/log/httpd/access.log:101.163.230.250
+./var/log/httpd/access.log:200.19.168.148
+./var/log/httpd/access.log.1:108.68.174.15
+./var/log/httpd/access.log.1:17.2.20.139
+./var/log/httpd/access.log.1:28.151.137.59
+./var/log/httpd/access.log.1:199.150.241.179
+./var/log/httpd/access.log.1:2.71.250.27
+./var/log/httpd/access.log.1:17.137.186.194
+./var/log/httpd/access.log.1:151.84.119.34
+./var/log/httpd/access.log.1:4.180.204.195
+./var/log/httpd/access.log.1:9.230.96.54
+./var/log/httpd/access.log.1:157.143.233.21
+# 👍 👍 👍  Correct!
+On your way to becoming a super-duper commandline hacker.
+
+
+
+# You have a new challenge!
+# Delete all of the files in this challenge
+# directory including all subdirectories and
+# their contents.
 # 
-bash(0)> 
+bash(0)>
  
  
  
