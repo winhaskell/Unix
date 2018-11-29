@@ -346,13 +346,72 @@ bash(0)> find . -name "access.log*" | xargs grep -Eo '^[^ ]+'
 On your way to becoming a super-duper commandline hacker.
 
 
-
 # You have a new challenge!
 # Delete all of the files in this challenge
 # directory including all subdirectories and
 # their contents.
 # 
-bash(0)>
- 
- 
+bash(0)> pwd
+/var/challenges/delete_files
+
+bash(0)> ls
+README
+animi.doc
+atque.wav
+aut.webm
+beatae.flac
+blanditiis.avi
+consectetur.pdf
+consequuntur.jpeg
+corporis.xls
+deleniti.gif
+dicta.wav
+dignissimos.css
+dignissimos.jpg
+dolor.doc
+dolorem.doc
+dolorem.xls
+dolorum.wav
+error.wav
+excepturi.png
+exercitationem.mp3
+expedita.jpeg
+expedita.xls
+hic.xls
+id.txt
+ipsa.xls
+iusto.gif
+libero.xls
+maxime.mp3
+mollitia.odt
+necessitatibus.css
+nisi.avi
+non.gif
+numquam.xls
+odit.doc
+omnis.txt
+perspiciatis.mov
+provident.avi
+quia.jpg
+quidem.wav
+saepe.doc
+sit.avi
+suscipit.wav
+temporibus.doc
+totam.avi
+var
+voluptates.wav
+voluptates.xls
+
+bash(0)> find . -delete
+# 👍 👍 👍  Correct!
+
+
+# You have a new challenge!
+# Count the number of files in the current
+# working directory. Print the number of
+# files as a single integer.
+# 
+bash(0)> 
+
  
