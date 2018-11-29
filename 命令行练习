@@ -724,3 +724,7 @@ bash(0)> find . -name '[0-9]*' -type f -printf "%f\n"
 # Print the 25th line of the file faces.txt
 # 
 bash(0)>
+Command is too long.
+bash(☠️)> 
+ 
+ 
