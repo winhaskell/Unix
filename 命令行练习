@@ -533,5 +533,52 @@ bash(0)> echo {1..100}
 # different file extensions.
 # Remove all files with the .doc extension
 # recursively in the current working directory.
+bash(0)> find . -name "*.doc" -delete
+# 👍 👍 👍  Correct!
 
 
+Wow, not many have gotten this far... don't stop!
+
+
+# You have a new challenge!
+# This challenge has text files (with a .txt extension)
+# that contain the phrase "challenges are difficult".
+# Delete this phrase recursively from all text files.
+# Note that some files are in subdirectories so you will
+# need to search for them.
+
+find: missing argument to `-exec'
+bash(1)> find . -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+# 👍 👍 👍  Correct!
+
+
+
+# You have a new challenge!
+# The file sum-me.txt has a list of numbers,
+# one per line. Print the sum of these numbers.
+#
+
+bash(0)> pwd
+/var/challenges/sum_all_numbers
+bash(0)> ls
+README
+sum-me.txt
+bash(0)> cat sum-me.txt
+1
+2
+3
+5
+7
+11
+13
+bash(127)> cat sum-me.txt | xargs | sed -e 's/\ /+/g' | bc
+42
+# 👍 👍 👍  Correct!
+
+
+# You have a new challenge!
+# Print all files in the current directory
+# recursively without the leading directory path.
+# 
+bash(0)> 
+ 
