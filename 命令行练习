@@ -161,6 +161,14 @@ bash(0)> sed -n '6,10p' access.log
 200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
 # 👍 👍 👍  Correct!
 
+bash(0)> cat access.log | tail -n 5
+199.37.62.156 - - [09/Jan/2017:22:42:18 +0100] "GET /posts/1/display HTTP/1.0" 200 2477
+55.74.240.123 - - [09/Jan/2017:22:44:25 +0100] "POST /posts/1/display HTTP/1.0" 200 3471
+251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 2477
+101.163.230.250 - - [09/Jan/2017:22:52:31 +0100] "DELETE /posts/2/display HTTP/1.0" 404 2477
+200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
+# 👍 👍 👍  Correct!
+
 
 # You have a new challenge!
 # There is a file named "access.log" in the
@@ -169,4 +177,11 @@ bash(0)> sed -n '6,10p' access.log
 # 
 bash(0)> 
 
- 
+
+
+tail -n 100：显示最后100行
+tail -n +100：从100行开始显示，显示100行以后的
+head -n 99：显示前面99行
+
+ sed命令
+ sed -n '6,99p' filename 这样你就可以只查看文件的第6行到第99行。
