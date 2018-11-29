@@ -874,3 +874,16 @@ I'm impressed at how far you have gotten... keep at it!
 # directory that start with "access.log", where
 # the next line contains the string "404". Note that
 # you will need to search recursively.
+
+
+bash(0)> cat ./.../\ \ /.\ .the\ flag.txt
+you got it!
+# 👍 👍 👍  Correct!
+
+# You have a new challenge!
+# How many lines contain tab characters in
+# the file named "file-with-tabs.txt" in the
+# current directory.
+
+I'm impressed at how far you have gotten... keep at it!
+ 
