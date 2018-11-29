@@ -728,3 +728,89 @@ Command is too long.
 bash(☠️)> 
  
  
+# Print the file faces.txt, but only print the first instance of each
+# duplicate line, even if the duplicates don't appear next to each other.
+# Note that order matters so don't sort the lines before removing duplicates.
+# 
+bash(2)> awk '!seen[$0]++' faces.txt
+(◕‿◕)
+(^̮^)
+ʘ‿ʘ
+ಠ_ಠ
+ಠ⌣ಠ
+ಠ‿ಠ
+(ʘ‿ʘ)
+(ಠ_ಠ)
+¯\_(ツ)_/¯
+(ಠ⌣ಠ
+ಠಠ⌣ಠ)
+(ಠ‿ಠ)
+٩◔̯◔۶
+ヽ༼ຈل͜ຈ༽ﾉ
+♥‿♥
+◔̯◔
+⊙﹏⊙
+(¬_¬)
+(；一_一)
+(͡° ͜ʖ ͡°)
+(° ͜ʖ °)
+¯\(°_o)/¯
+( ﾟヮﾟ)
+(︺︹︺)
+# 👍 👍 👍  Correct!
+
+
+# You have a new challenge!
+# The file "table.csv" contains the following comma-separated lines:
+# id,name,count
+# 4,susan,11
+# 33,alice,22
+# 1772,joe,33
+# 
+# Print the rows as a table, like the following:
+# id    name   count
+# 4     susan  11
+# 33    alice  22
+# 1772  joe    33
+# 
+bash(0)> 
+
+
+bash(0)> pwd
+/var/challenges/find_primes
+# You have a new challenge!
+# The following excerpt from War and Peace is saved to
+# the file 'war_and_peace.txt':
+# 
+# She is betraying us! Russia alone must save Europe.
+# Our gracious sovereign recognizes his high vocation
+# and will be true to it. That is the one thing I have
+# faith in! Our good and wonderful sovereign has to
+# perform the noblest role on earth, and he is so virtuous
+# and noble that God will not forsake him. He will fulfill
+# his vocation and crush the hydra of revolution, which
+# has become more terrible than ever in the person of this
+# murderer and villain!
+# 
+# The file however has been corrupted, there are random '!'
+# marks inserted throughout.  Print the original text.
+# 
+bash(0)> < war_and_peace.txt tr -s '!' | sed 's/!\([a-z]\)/\1/g' | sed 's/!\( [a-z]\)/\1/g' | sed 's/!\.!/./g' | sed 's/ !/ /g' 
+She is betraying us! Russia alone must save Europe.
+Our gracious sovereign recognizes his high vocation
+and will be true to it. That is the one thing I have
+faith in! Our good and wonderful sovereign has to
+perform the noblest role on earth, and he is so virtuous
+and noble that God will not forsake him. He will fulfill
+his vocation and crush the hydra of revolution, which
+has become more terrible than ever in the person of this
+murderer and villain!
+# 👍 👍 👍  Correct!
+
+
+# You have a new challenge!
+# access.log.1 and access.log.2 are http server logs. Print the IP
+# addresses common to both files, one per line.
+# 
+bash(0)> 
+ 
