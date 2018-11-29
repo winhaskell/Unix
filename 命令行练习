@@ -1,1 +1,66 @@
 https://cmdchallenge.com/
+
+You are off to a great start, keep on going!
+Test against random data failed - try again
+
+# You have a new challenge!
+
+# Print "hello world".
+# Hint: There are many ways to print text on
+# the command line, one way is with the 'echo'
+# command.
+# 
+# Try it below and good luck!
+# 
+# You have a new challenge!
+# Print the current working directory.
+# 
+# You have a new challenge!
+# Print "hello world".
+# Hint: There are many ways to print text on
+# the command line, one way is with the 'echo'
+# command.
+# 
+# Try it below and good luck!
+# 
+bash(0)> pwd
+/var/challenges/hello_world
+bash(0)> ls
+README
+bash(0)> echo  "hello world".
+hello world.
+bash(0)> echo ""hello world"."
+hello world.
+bash(0)> console.log('hello world!');
+-c: line 0: syntax error near unexpected token `'hello world!''
+bash: -c: line 0: `export MANPAGER=cat;console.log('hello world!');'
+bash(1)> touch helloworld && echo "hello world" > helloworld && cat helloworld
+hello world
+# 👍 👍 👍  Correct!
+# You have a new challenge!
+# Print the current working directory.
+# 
+bash(0)> pwd
+/var/challenges/current_working_directory
+# 👍 👍 👍  Correct!
+# You have a new challenge!
+# List names of all the files in the current
+# directory, one file per line.
+# 
+bash(0)> ls -al
+total 24
+drwxr-xr-x.  2 501 dialout 4096 Jan 29 20:50 .
+drwxr-xr-x. 39 501 dialout 4096 Apr 18 19:04 ..
+-rw-r--r--.  1 501 dialout  107 Apr 29 17:44 README
+bash(0)> ls -a
+.
+..
+README
+bash(0)> ls -a
+.
+..
+README
+bash(0)> 
+ 
+ 
+ 
