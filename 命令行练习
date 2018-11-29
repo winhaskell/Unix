@@ -414,4 +414,91 @@ bash(0)> find . -delete
 # 
 bash(0)> 
 
- 
+ bash(0)> ls 
+README
+access.log
+bash(0)> ls | wc -l 
+2
+# You have a new challenge!
+# Delete all of the files in this challenge
+# directory including all subdirectories and
+# their contents.
+# 
+# You have a new challenge!
+# Count the number of files in the current
+# working directory. Print the number of
+# files as a single integer.
+# 
+bash(0)> ls | wc -l
+2
+bash(0)> pwd
+/var/challenges/count_files
+bash(0)> ls
+README
+access.log
+bash(0)> ls | wc -l 
+2
+bash(0)> pwd
+/var/challenges/count_files
+bash(0)> ls | wc -l
+2
+bash(0)> ls
+README
+access.log
+bash(0)> ls -alt
+total 40
+-rw-r--r--.  1 501 dialout  145 Jun 29 18:59 README
+drwxr-xr-x.  2 501 dialout 4096 Jun 29 18:32 .
+-rw-r--r--.  1 501 dialout   27 Jun 29 18:32 .hidden
+-rw-r--r--.  1 501 dialout  901 Jun 29 18:30 access.log
+drwxr-xr-x. 42 501 dialout 4096 Jun 29 17:30 ..
+bash(0)> ls | wc -l
+2
+bash(0)> sort access.log
+101.163.230.250 - - [09/Jan/2017:22:52:31 +0100] "DELETE /posts/2/display HTTP/1.0" 404 2477
+163.56.115.58 - - [09/Jan/2017:22:29:57 +0100] "GET /posts/2/display HTTP/1.0" 200 3240
+199.37.62.156 - - [09/Jan/2017:22:42:18 +0100] "GET /posts/1/display HTTP/1.0" 200 2477
+200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
+207.243.19.2 - - [09/Jan/2017:22:38:03 +0100] "GET /bar/create HTTP/1.0" 200 1116
+225.219.54.140 - - [09/Jan/2017:22:35:30 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 500 2477
+251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 2477
+55.74.240.123 - - [09/Jan/2017:22:44:25 +0100] "POST /posts/1/display HTTP/1.0" 200 3471
+69.16.40.148 - - [09/Jan/2017:22:34:33 +0100] "GET /pages/create HTTP/1.0" 500 3471
+75.113.188.234 - - [09/Jan/2017:22:30:43 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 1116
+
+# You have a new challenge!
+# Print the contents of access.log
+# sorted.
+# 
+bash(0)> sort access.log 
+101.163.230.250 - - [09/Jan/2017:22:52:31 +0100] "DELETE /posts/2/display HTTP/1.0" 404 2477
+163.56.115.58 - - [09/Jan/2017:22:29:57 +0100] "GET /posts/2/display HTTP/1.0" 200 3240
+199.37.62.156 - - [09/Jan/2017:22:42:18 +0100] "GET /posts/1/display HTTP/1.0" 200 2477
+200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
+207.243.19.2 - - [09/Jan/2017:22:38:03 +0100] "GET /bar/create HTTP/1.0" 200 1116
+225.219.54.140 - - [09/Jan/2017:22:35:30 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 500 2477
+251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 2477
+55.74.240.123 - - [09/Jan/2017:22:44:25 +0100] "POST /posts/1/display HTTP/1.0" 200 3471
+69.16.40.148 - - [09/Jan/2017:22:34:33 +0100] "GET /pages/create HTTP/1.0" 500 3471
+75.113.188.234 - - [09/Jan/2017:22:30:43 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 1116
+# 👍 👍 👍  Correct!
+# You have a new challenge!
+
+
+
+# Print the number of lines
+# in access.log that contain the string
+# "GET".
+# 
+bash(0)> grep GET access.log | wc -l 
+8
+# 👍 👍 👍  Correct!
+
+
+
+# You have a new challenge!
+# The file split-me.txt contains a list of
+# numbers separated by a ';' character.
+# Split the numbers on the ';' character,
+# one number per line.
+
