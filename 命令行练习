@@ -502,3 +502,23 @@ bash(0)> grep GET access.log | wc -l
 # Split the numbers on the ';' character,
 # one number per line.
 
+bash(0)> cat split-me.txt | sed s/\;/\\n/g
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# 👍 👍 👍  Correct!
+
+
+# You have a new challenge!
+# Print the numbers 1 to 100 separated
+# by spaces.
+# 
+bash(0)> pwd
+/var/challenges/print_number_sequence
