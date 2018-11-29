@@ -604,3 +604,123 @@ libero.xls
 # them in the current directory recursively.
 # 
 bash(0)>
+
+
+bash(0)> ls | wc -l
+2
+# You have a new challenge!
+# Print the contents of access.log
+# sorted.
+# 
+bash(0)> sort access.log
+101.163.230.250 - - [09/Jan/2017:22:52:31 +0100] "DELETE /posts/2/display HTTP/1.0" 404 2477
+163.56.115.58 - - [09/Jan/2017:22:29:57 +0100] "GET /posts/2/display HTTP/1.0" 200 3240
+199.37.62.156 - - [09/Jan/2017:22:42:18 +0100] "GET /posts/1/display HTTP/1.0" 200 2477
+200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
+207.243.19.2 - - [09/Jan/2017:22:38:03 +0100] "GET /bar/create HTTP/1.0" 200 1116
+225.219.54.140 - - [09/Jan/2017:22:35:30 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 500 2477
+251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 2477
+55.74.240.123 - - [09/Jan/2017:22:44:25 +0100] "POST /posts/1/display HTTP/1.0" 200 3471
+69.16.40.148 - - [09/Jan/2017:22:34:33 +0100] "GET /pages/create HTTP/1.0" 500 3471
+75.113.188.234 - - [09/Jan/2017:22:30:43 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 1116
+# 👍 👍 👍  Correct!
+ 
+ 
+ # You have a new challenge!
+# The files in this challenge contain spaces.
+# List all of the files (filenames only) in the
+# current directory but replace all spaces with
+# a '.' character.
+# 
+bash(0)> find . -type f -printf "%f\n" | xargs -0 -I {} echo {} | tr ' ' '.' 
+Thomas.Parks
+Mr..James.Lopez
+Amy.Anderson
+Claudia.Mccormick
+Kevin.Price
+James.Harper
+Lynn.Robinson
+Thomas.Washington
+Corey.Bird
+Robert.Hill
+Angel.Saunders
+Tamara.Anderson
+John.Nguyen
+Luke.Mason
+Mr..Shawn.Martin
+Crystal.Valdez
+Jared.Hill.DVM
+Sheri.Bishop
+Allison.Brown
+Christine.Valdez
+Briana.Wilson
+Mallory.Peterson
+Tammy.Galloway
+Brad.Michael
+Alexis.Stein
+Kimberly.Parker
+Lori.Macias
+Crystal.Dunn
+Terri.Young
+Robert.Gregory
+Karen.Ramirez
+Michaela.Hobbs
+Olivia.Irwin
+Yvonne.Myers
+Mrs..Jade.Clark
+Christopher.Miller
+Adam.Simpson
+Tiffany.Clark
+Parker.Gilbert
+James.Roberts
+Matthew.Romero
+Molly.Stevens
+Marie.Gutierrez
+Carrie.Alexander
+Sarah.Hill
+Joseph.Hurst
+Jorge.Ross
+Erica.Richardson
+README
+Courtney.Miller
+Scott.Rice
+bash(0)>
+
+
+
+# There are a mix of files in this directory
+# that start with letters and numbers. Print
+# the filenames (just the filenames) of all
+# files that start with a number recursively
+# in the current directory.
+# 
+bash(0)> find . -name '[0-9]*' -type f -printf "%f\n" 
+540Katherine Jones
+78Michelle Spencer
+757Robert Marquez
+293Linda Bennett
+335John Joseph
+593Brett Martin
+04Carrie Alexander
+436Teresa Owens
+639Charles Ferguson
+477Thomas Pierce MD
+778Holly Archer
+3maxime.mp3
+388Andrew Carter
+682Terri Jones
+42Robert Hill
+511Tammy Welch
+402Nancy Henson
+48Thomas Allen
+974Michael Bowman
+25Brandon Mcdonald
+132Rebecca Rubio
+670James Jacobs
+99blanditiis.avi
+737Jeffrey Davis
+# 👍 👍 👍  Correct!
+# You have a new challenge!
+# Print the 25th line of the file faces.txt
+# 
+bash(0)>
