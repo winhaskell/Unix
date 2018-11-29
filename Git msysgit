@@ -1,1 +1,4 @@
 Git-1.9.2-preview20140411.exe
+
+$ git --version
+git version 1.9.2.msysgit.0
