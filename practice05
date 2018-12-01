@@ -1,6 +1,7 @@
 kill删除或控制执行中的进程 
 
-参 数：-num 通过num传递一个信号控制进程（默认15，终止进程），常用值如下：-9 强制删除进程；-18 继续暂停的进程；-19 暂停一个进程（使之处于T状态）；-l 显示信号列表。
+参 数：-num 通过num传递一个信号控制进程（默认15，终止进程），常用值如下：-9 强制删除进程；-18 继续暂停的进程；-19 暂停一个进程（使之处于T状态）；
+-l 显示信号列表。
 
 例如：
 
@@ -31,3 +32,22 @@ bash(0)> kill -l
 58) SIGRTMAX-6    59) SIGRTMAX-5    60) SIGRTMAX-4    61) SIGRTMAX-3    62) SIGRTMAX-2
 63) SIGRTMAX-1    64) SIGRTMAX
 bash(0)>
+
+
+bash(0)> ls
+README
+file-with-tabs.txt
+
+bash(0)> wc file-with-tabs.txt
+ 5  5 21 file-with-tabs.txt
+ 
+bash(0)> wc RREADME
+wc: RREADME: No such file or directory
+
+bash(1)> wc README
+  7  27 157 README
+  
+bash(0)> 
+ 
+ 
+ 
