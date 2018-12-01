@@ -887,3 +887,29 @@ you got it!
 
 I'm impressed at how far you have gotten... keep at it!
  
+# You have a new challenge!
+# How many lines contain tab characters in
+# the file named "file-with-tabs.txt" in the
+# current directory.
+# 
+bash(0)> cat file-with-tabs.txt
+    a
+    b
+    c
+    d
+    e
+bash(0)> cat file-with-tabs.txt | grep -P '\t' | wc -l
+3
+# 👍 👍 👍  Correct!
+
+I'm impressed at how far you have gotten... keep at it!
+
+
+# You have a new challenge!
+# There are files in this challenge with
+# different file extensions.
+# Remove all files without the .txt and .exe extensions
+# recursively in the current working directory.
+# 
+bash(0)>
+
