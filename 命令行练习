@@ -1091,9 +1091,10 @@ bash(127)> for num in $(cat random-numbers.txt); do [[ $num == $(factor $num | c
 12
 # 👍 👍 👍  Correct!
 
+^‿^ ¯\_(ツ)_/¯ ʘ‿ʘ ♥‿♥ (◕‿◕) ( ͡° ͜ʖ ͡° )
+You are officially a command line master, great job!
+
 # You have a new challenge!
-
-
 
 # Print all matching lines (without the filename
 # or the file path) in all files under the current
