@@ -1103,3 +1103,24 @@ You are officially a command line master, great job!
 # you will need to search recursively.
 # 
 bash(0)>
+
+
+
+bash(127)> watch -n1 "date '+%D%n%T'|figlet -k"
+Error opening terminal: unknown.
+bash(1)> echo $(($(date -d 25-Dec +%j) - $(date +%j))) days until xmas
+22 days until xmas
+bash(0)> echo $(($(date -d 31-Dec +%j) - $(date +%j))) days until xmas
+28 days until xmas
+bash(0)> echo $(($(date -d 31-Dec +%j) - $(date +%j))) days until newyear
+28 days until newyear
+bash(0)> echo $(($(date -d 1-Jan +%j) - $(date +%j))) days until newyear
+-336 days until newyear
+bash(0)> echo $(($(date -d 1-Dec +%j) - $(date +%j))) days until newyear
+-2 days until newyear
+bash(0)> echo $(($(date -d 31-Dec +%j) - $(date +%j))) days until NewYear
+28 days until NewYear
+bash(0)> 
+ 
+ 
+ 
