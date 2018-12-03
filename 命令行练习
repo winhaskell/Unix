@@ -941,4 +941,34 @@ bash(2)> sed -n '25p' faces.txt
 # 
 bash(0)> 
  
- 
+# You have a new challenge!
+# The file "table.csv" contains the following comma-separated lines:
+# id,name,count
+# 4,susan,11
+# 33,alice,22
+# 1772,joe,33
+# 
+# Print the rows as a table, like the following:
+# id    name   count
+# 4     susan  11
+# 33    alice  22
+# 1772  joe    33
+# 
+bash(0)> cat table.csv | column -t -s","
+
+id    name   count
+4     susan  11
+33    alice  22
+1772  joe    33
+# 👍 👍 👍  Correct!
+
+
+
+
+# You have a new challenge!
+# The file random-numbers.txt contains a list
+# of 100 random integers. Print the number of
+# unique prime numbers contained in the file.
+# 
+bash(0)>
+
