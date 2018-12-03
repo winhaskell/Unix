@@ -913,3 +913,32 @@ I'm impressed at how far you have gotten... keep at it!
 # 
 bash(0)>
 
+
+
+
+# You have a new challenge!
+Solution Print the 25th line of the file faces.txt  文本中的第n行是什么内容 > sed -n '行数p' 文件名 
+# Print the 25th line of the file faces.txt
+# 
+bash(2)> sed -n '25p' faces.txt
+¯\_(ツ)_/¯
+# 👍 👍 👍  Correct!
+
+
+
+# You have a new challenge!
+# The file "table.csv" contains the following comma-separated lines:
+# id,name,count
+# 4,susan,11
+# 33,alice,22
+# 1772,joe,33
+# 
+# Print the rows as a table, like the following:
+# id    name   count
+# 4     susan  11
+# 33    alice  22
+# 1772  joe    33
+# 
+bash(0)> 
+ 
+ 
