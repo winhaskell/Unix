@@ -1135,4 +1135,64 @@ bash(0)> echo $(($(date -d 31-Dec +%j) - $(date +%j))) days until NewYear
 bash(0)> 
  
  
- 
+ bash(127)> pwd
+/var/challenges/files_starting_with_a_number
+bash(0)> ls
+001dir
+04Carrie Alexander
+132Rebecca Rubio
+25Brandon Mcdonald
+293Linda Bennett
+335John Joseph
+388Andrew Carter
+402Nancy Henson
+42Robert Hill
+436Teresa Owens
+477Thomas Pierce MD
+48Thomas Allen
+511Tammy Welch
+540Katherine Jones
+593Brett Martin
+639Charles Ferguson
+670James Jacobs
+682Terri Jones
+737Jeffrey Davis
+757Robert Marquez
+778Holly Archer
+78Michelle Spencer
+974Michael Bowman
+Jorge Ross
+Matthew Romero
+Mr. James Lopez
+README
+Sheri Bishop
+dir
+dir3
+tmp
+bash(0)> wc dir
+wc: dir: Is a directory
+      0       0       0 dir
+bash(1)> wc tmp
+ 20  41 284 tmp
+bash(0)> cat tmp
+Jeffrey Davis
+Robert Marquez
+Teresa Owens
+Nancy Henson
+Thomas Pierce MD
+Terri Jones
+Brandon Mcdonald
+Brett Martin
+Tammy Welch
+Rebecca Rubio
+Michael Bowman
+James Jacobs
+Katherine Jones
+Charles Ferguson
+Holly Archer
+Linda Bennett
+Thomas Allen
+Michelle Spencer
+John Joseph
+Andrew Carter
+bash(0)>
