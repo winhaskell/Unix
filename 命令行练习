@@ -413,12 +413,24 @@ bash(0)> find . -delete
 # files as a single integer.
 # 
 bash(0)> 
-
- bash(0)> ls 
+bash(0)> ls 
 README
 access.log
 bash(0)> ls | wc -l 
 2
+
+
+bash(0)> ls
+README
+access.log
+bash(0)> pwd
+/var/challenges/count_files
+bash(0)>  ls -l | wc -l
+3
+# 👍 👍 👍  Correct!
+
+
+
 # You have a new challenge!
 # Delete all of the files in this challenge
 # directory including all subdirectories and
@@ -626,7 +638,7 @@ bash(0)> sort access.log
 # 👍 👍 👍  Correct!
  
  
- # You have a new challenge!
+# You have a new challenge!
 # The files in this challenge contain spaces.
 # List all of the files (filenames only) in the
 # current directory but replace all spaces with
