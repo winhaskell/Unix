@@ -1,0 +1,115 @@
+bash(0)> cat README
+# Generate a number sequence.
+# *********************
+# Print the numbers 1 to 100 separated
+# by spaces.
+#
+bash(0)> help dir -e
+dirs: dirs [-clpv] [+N] [-N]
+    Display directory stack.
+    
+    Display the list of currently remembered directories.  Directories
+    find their way onto the list with the `pushd' command; you can get
+    back up through the list with the `popd' command.
+    
+    Options:
+      -c    clear the directory stack by deleting all of the elements
+      -l    do not print tilde-prefixed versions of directories relative
+        to your home directory
+      -p    print the directory stack with one entry per line
+      -v    print the directory stack with one entry per line prefixed
+        with its position in the stack
+    
+    Arguments:
+      +N    Displays the Nth entry counting from the left of the list shown by
+        dirs when invoked without options, starting with zero.
+    
+      -N    Displays the Nth entry counting from the right of the list shown by
+        dirs when invoked without options, starting with zero.
+    
+    Exit Status:
+    Returns success unless an invalid option is supplied or an error occurs.
+bash(0)>
+
+
+bash(127)>  cat sum-me.txt | xargs -n3
+1 2 3
+5 7 11
+13
+
+bash(0)>  cat sum-me.txt | xargs -n5
+1 2 3 5 7
+11 13
+
+bash(0)> echo "nameXnameXnameXname" | xargs -dX
+name name name name
+
+bash(0)> echo "nameXnameXnameXname" | xargs -3X
+xargs: invalid option -- '3'
+
+Usage: xargs [OPTION]... COMMAND [INITIAL-ARGS]...
+Run COMMAND with arguments INITIAL-ARGS and more arguments read from input.
+Mandatory and optional arguments to long options are also
+mandatory or optional for the corresponding short option.
+  -0, --null                   items are separated by a null, not whitespace;
+                                 disables quote and backslash processing and
+                                 logical EOF processing
+  -a, --arg-file=FILE          read arguments from FILE, not standard input
+  -d, --delimiter=CHARACTER    items in input stream are separated by CHARACTER,
+                                 not by whitespace; disables quote and backslash
+                                 processing and logical EOF processing
+  -E END                       set logical EOF string; if END occurs as a line
+                                 of input, the rest of the input is ignored
+                                 (ignored if -0 or -d was specified)
+  -e, --eof[=END]              equivalent to -E END if END is specified;
+                                 otherwise, there is no end-of-file string
+  -I R                         same as --replace=R
+  -i, --replace[=R]            replace R in INITIAL-ARGS with names read
+                                 from standard input; if R is unspecified,
+                                 assume {}
+  -L, --max-lines=MAX-LINES    use at most MAX-LINES non-blank input lines per
+                                 command line
+  -l[MAX-LINES]                similar to -L but defaults to at most one non-
+                                 blank input line if MAX-LINES is not specified
+  -n, --max-args=MAX-ARGS      use at most MAX-ARGS arguments per command line
+  -P, --max-procs=MAX-PROCS    run at most MAX-PROCS processes at a time
+  -p, --interactive            prompt before running commands
+      --process-slot-var=VAR   set environment variable VAR in child processes
+  -r, --no-run-if-empty        if there are no arguments, then do not run COMMAND;
+                                 if this option is not given, COMMAND will be
+                                 run at least once
+  -s, --max-chars=MAX-CHARS    limit length of command line to MAX-CHARS
+      --show-limits            show limits on command-line length
+  -t, --verbose                print commands before executing them
+  -x, --exit                   exit if the size (see -s) is exceeded
+      --help                   display this help and exit
+      --version                output version information and exit
+Please see also the documentation at http://www.gnu.org/software/findutils/.
+You can report (and track progress on fixing) bugs in the "xargs"
+program via the GNU findutils bug-reporting page at
+https://savannah.gnu.org/bugs/?group=findutils or, if
+you have no web access, by sending email to <bug-findutils@gnu.org>.
+bash(1)> 
+
+bash(0)> echo "nameXnameXnameXname" | xargs -dX
+name name name name
+
+bash(1)> echo "nameXnameXnameXname" | xargs -dX -n2
+name name
+name name
+
+bash(0)> echo "nameXnameXnameXname" | xargs -dX -n3
+name name name
+name
+
+bash(0)> echo "nameXnameXnameXname" | xargs -dX -n1
+name
+name
+name
+name
+
+bash(0)> echo "nameXnameXnameXname" | xargs -dX -n4
+name name name name
+bash(0)> 
+ 
+ 
