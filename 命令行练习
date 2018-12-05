@@ -690,7 +690,73 @@ Courtney.Miller
 Scott.Rice
 bash(0)>
 
+# You have a new challenge!
+# The files in this challenge contain spaces.
+# List all of the files (filenames only) in the
+# current directory but replace all spaces with
+# a '.' character.
+# 
+bash(0)> ls | tr ' ' '.'
 
+Adam.Simpson
+Alexis.Stein
+Allison.Brown
+Amy.Anderson
+Angel.Saunders
+Brad.Michael
+Briana.Wilson
+Carrie.Alexander
+Christine.Valdez
+Christopher.Miller
+Claudia.Mccormick
+Corey.Bird
+Courtney.Miller
+Crystal.Dunn
+Crystal.Valdez
+Erica.Richardson
+James.Harper
+James.Roberts
+Jared.Hill.DVM
+John.Nguyen
+Jorge.Ross
+Joseph.Hurst
+Karen.Ramirez
+Kevin.Price
+Kimberly.Parker
+Lori.Macias
+Luke.Mason
+Lynn.Robinson
+Mallory.Peterson
+Marie.Gutierrez
+Matthew.Romero
+Michaela.Hobbs
+Molly.Stevens
+Mr..James.Lopez
+Mr..Shawn.Martin
+Mrs..Jade.Clark
+Olivia.Irwin
+Parker.Gilbert
+README
+Robert.Gregory
+Robert.Hill
+Sarah.Hill
+Scott.Rice
+Sheri.Bishop
+Tamara.Anderson
+Tammy.Galloway
+Terri.Young
+Thomas.Parks
+Thomas.Washington
+Tiffany.Clark
+Yvonne.Myers
+
+# 👍 👍 👍  Correct!
+
+
+You are officially a command line master, great job!
+
+
+# You have a new challenge!
 
 # There are a mix of files in this directory
 # that start with letters and numbers. Print
