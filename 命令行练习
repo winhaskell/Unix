@@ -1399,3 +1399,81 @@ bash(0)> find . -type f -regextype posix-extended ! -regex ".*(\.txt|\.exe)$" -e
 # Remove those files.
 # 
 bash(0)>
+
+
+# You have a new challenge!
+# In the current directory there is a file called netstat.out
+# print all the IPv4 listening ports sorted from the higher to lower.
+# 
+bash(0)> egrep  "tcp\ .*:**LISTEN" netstat.out | awk '{print $4}' | sed -e 's/.*\://g' | sort -nr
+
+45922
+9090
+8080
+1723
+1254
+1244
+1234
+111
+80
+22
+
+# 👍 👍 👍  Correct!
+
+
+# You have a new challenge!
+# There are some files in this directory that
+# start with a dash in the filename.
+# Remove those files.
+# 
+bash(0)> rm ./-*
+# 👍 👍 👍  Correct!
+# You have a new challenge!
+
+
+# You have a new challenge!
+# The following excerpt from Victor Hugo's "Les miserables", is saved to
+# the file 'les_miserables.txt':
+# 
+# The glance of women resembles certain combinations of wheels, which are
+# tranquil in appearance yet formidable. You pass close to them every day,
+# peaceably and with impunity, and without a suspicion of anything.
+# A moment arrives when you forget that the thing is there.
+# You go and come, dream, speak, laugh. All at once you feel yourself
+# clutched; all is over. The wheels hold you fast, the glance has
+# ensnared you. It has caught you, no matter where or how, by some portion
+# of your thought which was fluttering loose, by some distraction which
+# had attacked you. You are lost.
+# 
+# However, the file was encoded using rot13. Print the original content
+# of the excerpt.
+# 
+bash(0)> cat les_miserables.txt| tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+
+The glance of women resembles certain combinations of wheels, which are
+tranquil in appearance yet formidable. You pass close to them every day,
+peaceably and with impunity, and without a suspicion of anything.
+A moment arrives when you forget that the thing is there.
+You go and come, dream, speak, laugh. All at once you feel yourself
+clutched; all is over. The wheels hold you fast, the glance has
+ensnared you. It has caught you, no matter where or how, by some portion
+of your thought which was fluttering loose, by some distraction which
+had attacked you. You are lost.
+
+# 👍 👍 👍  Correct!
+# You have a new challenge!
+
+# Print "hello world".
+# Hint: There are many ways to print text on
+# the command line, one way is with the 'echo'
+# command.
+# 
+# Try it below and good luck!
+# 
+
+bash(0)> echo  "hello world"
+hello world
+# 👍 👍 👍  Correct!
+
+
+
