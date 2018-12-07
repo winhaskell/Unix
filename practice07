@@ -233,3 +233,11 @@ bash(0)>
  
  
  
+ 
+bash(0)> free
+              total        used        free      shared  buff/cache   available
+Mem:        1734656      144796      161884       84400     1427976     1250544
+Swap:       1048572        3328     1045244
+bash(0)> 
+ 
+ 
