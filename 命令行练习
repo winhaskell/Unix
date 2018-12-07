@@ -1638,4 +1638,25 @@ X+�D�����6�ܺ� �&����h)&w6ז�θ����r=��
 bash(0)> 
  
 ~~
+# You have a new challenge!
+# There is a file:
+# ./.../  /. .the flag.txt
+# Show its contents on the screen.
+# 
+bash(0)>  cat ./.../\ \ /.\ .the\ flag.txt
+you got it!
+# 👍 👍 👍  Correct!
+
+You are officially a command line master, great job!
+
+
+# You have a new challenge!
+# Print "hello world".
+# Hint: There are many ways to print text on
+# the command line, one way is with the 'echo'
+# command.
+# 
+# Try it below and good luck!
+# 
+bash(0)> 
 
