@@ -946,6 +946,23 @@ I'm impressed at how far you have gotten... keep at it!
 # you will need to search recursively.
 
 
+# You have a new challenge!
+# There is a file:
+# ./.../  /. .the flag.txt
+# Show its contents on the screen.
+# 
+
+bash(1)> cat ./.../\ \ /.\ .the\ flag.txt
+you got it!
+# 👍 👍 👍  Correct!
+ 
+bash(0)> cat ./.../  /. .the flag.txt
+cat: ./.../: Is a directory
+cat: /.: Is a directory
+cat: .the: No such file or directory
+cat: flag.txt: No such file or directory
+
+
 bash(0)> cat ./.../\ \ /.\ .the\ flag.txt
 you got it!
 # 👍 👍 👍  Correct!
