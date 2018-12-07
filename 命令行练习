@@ -1590,3 +1590,52 @@ bash(0)> cat access.log.1
 4.180.204.195 - - [09/Jan/2017:22:49:53 +0100] "GET /foo/create HTTP/1.0" 502 1116
 9.230.96.54 - - [09/Jan/2017:22:52:58 +0100] "GET /bar/create HTTP/1.0" 200 1116
 157.143.233.21 - - [09/Jan/2017:22:53:50 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 502 1083
+
+
+
+# You have a new challenge!
+# Print all files with a .bin extension in the current directory
+# that are different than the file named base.bin.
+# 
+bash(0)> for i in $(ls *.bin); do if [[ `cmp base.bin $i` ]]; then echo $i; fi; done
+test2.bin
+test4.bin
+test5.bin
+test7.bin
+# 👍 👍 👍  Correct!
+
+bash(0)> ls
+README
+base.bin
+file1.txt
+file2.txt
+test1.bin
+test2.bin
+test3.bin
+test4.bin
+test5.bin
+test6.bin
+test7.bin
+bash(0)> ls -alt
+total 104
+drwxr-xr-x. 43 root root 4096 Nov 25 04:33 ..
+drwxrwxrwx.  2 root root 4096 Jun 13 22:29 .
+-rw-r--r--.  1 root root  180 Jun 13 22:29 README
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 base.bin
+-rw-rw-rw-.  1 root root   18 Jun 13 22:29 file1.txt
+-rw-rw-rw-.  1 root root   18 Jun 13 22:29 file2.txt
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test1.bin
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test2.bin
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test3.bin
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test4.bin
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test5.bin
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test6.bin
+-rw-rw-rw-.  1 root root  128 Jun 13 22:29 test7.bin
+bash(0)> cat base.bin
+X+�D�����6�ܺ� �&���h)&w6ז�θ����r=��[���N2,�n�-��k�J���zÅ������ߠ����x#</�`Vͻ�Yby"s7_�l���p��NZF�������-c�C���~
+bash(0)> cat test2.bin
+X+�D�����6�ܺ� �&����h)&w6ז�θ����r=��[��yO2,�n�-��k�ʯ��zÅ������ߠ����x#<��`Vͻ�Yby"s7_�l���p���YF�������-c�C#��~
+bash(0)> 
+ 
+~~
+
