@@ -240,4 +240,30 @@ Mem:        1734656      144796      161884       84400     1427976     1250544
 Swap:       1048572        3328     1045244
 bash(0)> 
  
+
+bash(0)> ps -ef | more
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 14:47 ?        00:00:00 /ro_volume/runcmd -slug delete_files cHMgLWVmIHwgbW9yZQ==
+root         7     1  0 14:47 ?        00:00:00 bash -O globstar -c export MANPAGER=cat;ps -ef | more
+root         9     7  0 14:47 ?        00:00:00 ps -ef
+root        10     7  0 14:47 ?        00:00:00 more
+bash(0)> 
+
+bash(0)> ps -efH | more
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  2 14:49 ?        00:00:00 /ro_volume/runcmd -slug delete_files cHMgLWVmSCB8IG1vcmU=
+root         7     1  0 14:49 ?        00:00:00   bash -O globstar -c export MANPAGER=cat;ps -efH | more
+root         9     7  0 14:49 ?        00:00:00     ps -efH
+root        10     7  0 14:49 ?        00:00:00     more
+
+
+
+  ps
+ps命令用于显示正在运行中的进程的信息，ps命令有很多选项，这里只列出了几个查看当前正在运行的所有进程
+$ ps -ef  | more
+
+以树状结构显示当前正在运行的进程，H选项表示显示进程的层次结构
+$ ps -efH | more
+
+
  
