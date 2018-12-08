@@ -266,4 +266,9 @@ $ ps -ef  | more
 $ ps -efH | more
 
 
+ bash(127)> free -g
+              total        used        free      shared  buff/cache   available
+Mem:              1           0           0           0           1           1
+Swap:             0           0           0
+bash(0)> 
  
