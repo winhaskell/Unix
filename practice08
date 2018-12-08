@@ -9,3 +9,15 @@ tmpfs             867328       0    867328   0% /sys/firmware
 
 df
 显示文件系统的磁盘使用情况，默认情况下df -k 将以字节为单位输出磁盘的使用量
+
+
+bash(0)>  df -T
+Filesystem     Type    1K-blocks    Used Available Use% Mounted on
+overlay        overlay   6722308 1995416   4368748  32% /
+tmpfs          tmpfs       65536       0     65536   0% /dev
+tmpfs          tmpfs      867328       0    867328   0% /sys/fs/cgroup
+/dev/sda9      ext4      6722308 1995416   4368748  32% /ro_volume
+shm            tmpfs       65536       0     65536   0% /dev/shm
+tmpfs          tmpfs      867328       0    867328   0% /sys/firmware
+
+使用-T选项显示文件系统类型
