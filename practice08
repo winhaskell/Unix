@@ -124,3 +124,52 @@ i999999
 mo-acbbaa0c3[nnnnnn]:~ #
 
 
+ps查看进程信息并通过less分页显示
+ps -ef |less
+
+
+查看命令历史使用记录并通过less分页显示
+
+[root@localhost test]# history | less
+
+mo-acbbaa0c3[nnnnnn]:~ # history | less
+    1  pwd
+    2  echo $(($(date -d 25-Dec +%j) - $(date +%j))) days until xmas
+    3  wc tmp
+    4  echo "nameXnameXnameXname" | xargs -dX
+    5  free
+    6  ps -efH | more
+    7  pwd
+    8  free -g
+    9  echo $USER
+   10  echo $PATH
+   11  env | grep PATH
+   12  less log2013.log
+   13  less log2018.log
+   14  less *.log
+   15  ls ls
+   16  ls la
+   17  ls al
+   18  ls-a
+   19  ls -a
+   20  ls
+   21  ps -ef |less
+   22  history | less
+   23  man ls
+   24  info
+   25  ls -l
+   26  ping linux.cn
+   27  ping https://www.sap.com/index.html
+   28  ping https://www.sap.com
+   29  ping www.sap.com
+   30  ping 2.16.195.200
+   31  mount
+   32  ls
+   33  cat /etc/locale.gen
+   34  dir *.log
+   35  ls -alt
+   36  sudo -s
+   37  pwd
+   38  whoami
+
+
