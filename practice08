@@ -173,3 +173,50 @@ mo-acbbaa0c3[nnnnnn]:~ # history | less
    38  whoami
 
 
+--------------------------------------------------------------------------
+
+
+mo-acbbaa0c3[nnnnnn]:~ # du -h
+4.0K    ./.local/share/systemd
+8.0K    ./.local/share
+12K     ./.local
+4.0K    ./bin
+4.0K    ./.fonts
+4.0K    ./.config
+96K     .
+
+mo-acbbaa0c3[nnnnnn]:~ # free
+             total       used       free     shared    buffers     cached
+Mem:      49031408   35393532   13637876    1518820     806680    7433080
+-/+ buffers/cache:   27153772   21877636
+Swap:      3129340      83116    3046224
+
+mo-acbbaa0c3[nnnnnn]:~ # free -b
+             total       used       free     shared    buffers     cached
+Mem:    50208161792 36248547328 13959614464 1555271680  826040320 7612010496
+-/+ buffers/cache: 27810496512 22397665280
+Swap:   3204444160   85110784 3119333376
+
+
+mo-acbbaa0c3[nnnnnn]:~ # free -k
+             total       used       free     shared    buffers     cached
+Mem:      49031408   35395660   13635748    1518820     806684    7433756
+-/+ buffers/cache:   27155220   21876188
+Swap:      3129340      83116    3046224
+
+
+mo-acbbaa0c3[nnnnnn]:~ # free -m
+             total       used       free     shared    buffers     cached
+Mem:         47882      34565      13316       1483        787       7259
+-/+ buffers/cache:      26518      21363
+Swap:         3055         81       2974
+
+mo-acbbaa0c3[nnnnnn]:~ # date
+Mon Dec 10 11:16:29 UTC 2018
+协调世界时（英语：Coordinated Universal Time，法语：Temps Universel Coordonné，简称UTC）
+是最主要的世界時間標準，其以原子时秒长为基础，在时刻上尽量接近于格林尼治标准时间。
+
+
+mo-acbbaa0c3[nnnnnn]:~ #
+
+
