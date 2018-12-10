@@ -21,3 +21,8 @@ shm            tmpfs       65536       0     65536   0% /dev/shm
 tmpfs          tmpfs      867328       0    867328   0% /sys/firmware
 
 使用-T选项显示文件系统类型
+
+
+ps查看进程信息并通过less分页显示 
+
+命令：ps -ef |less
