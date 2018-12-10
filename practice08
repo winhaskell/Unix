@@ -220,3 +220,15 @@ Mon Dec 10 11:16:29 UTC 2018
 mo-acbbaa0c3[nnnnnn]:~ #
 
 
+mo-acbbaa0c3[nnnnnn]:~ # cat /etc/locale.gen
+cat: /etc/locale.gen: No such file or directory
+
+mo-acbbaa0c3[nnnnnn]:~ # whereis bash
+bash: /bin/bash /etc/bash.bashrc /usr/share/bash /usr/share/man/man1/bash.1.gz
+
+mo-acbbaa0c3[nnnnnn]:~ # whereis -m bash
+bash: /usr/share/man/man1/bash.1.gz
+
+mo-acbbaa0c3[nnnnnn]:~ # whereis -b bash
+bash: /bin/bash /etc/bash.bashrc /usr/share/bash
+
