@@ -259,4 +259,11 @@ mo-acbbaa0c3[nnnnnn]:~ # echo "'$foo' is ${#foo} characters long."
 
 
 
+mo-acbbaa0c3[nnnnnn]:~ # for ((i=0;i<10;i+=2)); do echo $((1<<i)); done
+1
+4
+16
+64
+256
+mo-acbbaa0c3[sc12bcf01t]:~ #
 
