@@ -250,4 +250,13 @@ Su Mo Tu We Th Fr Sa
 
 
 
+mo-acbbaa0c3[nnnnnn]:~ # foo="This string is long."
+mo-acbbaa0c3[nnnnnn]:~ # echo "'$foo' is ${#foo} characters long."
+
+'This string is long.' is 20 characters long.
+
+
+
+
+
 
