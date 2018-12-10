@@ -108,19 +108,19 @@ y  向前滚动一行
 
 
 
-mo-acbbaa0c3[sc12bcf01t]:/home/roaming/I999999 # \q
+mo-acbbaa0c3[nnnnnn]:/home/roaming/I999999 # \q
 If 'q' is not a typo you can use command-not-found to lookup the package that contains it, like this:
     cnf q
     
-mo-acbbaa0c3[sc12bcf01t]:/home/roaming/I999999 # exit
+mo-acbbaa0c3[nnnnnn]:/home/roaming/I999999 # exit
 exit
 
-mo-acbbaa0c3[sc12bcf01t]:~ # pwd
+mo-acbbaa0c3[nnnnnn]:~ # pwd
 /home/roaming/I999999
 
-mo-acbbaa0c3[sc12bcf01t]:~ # whoami
+mo-acbbaa0c3[nnnnnn]:~ # whoami
 i999999
 
-mo-acbbaa0c3[sc12bcf01t]:~ #
+mo-acbbaa0c3[nnnnnn]:~ #
 
 
