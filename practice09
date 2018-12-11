@@ -1,0 +1,151 @@
+ find / -atime -1
+ 
+ 
+find: ‘/app/oracle/11.2.0/client_home1/opmn/logs’: Permission denied
+find: ‘/app/lost+found’: Permission denied
+/app/tomcat
+find: ‘/app/tomcat/sf_conf/secrets’: Permission denied
+/app/tomcat/Messages.csv
+/app/tomcat/velocity.log
+find: ‘/app/tomcat/tx-object-store’: Permission denied
+find: ‘/app/tomcat/webapps/birtReportViewer/report’: Permission denied
+find: ‘/app/tomcat/webapps/birtReportViewer/scriptlib’: Permission denied
+find: ‘/app/tomcat/webapps/flex/WEB-INF/flex/logs’: Permission denied
+/app/tomcat/logs
+/app/tomcat/logs/server.log
+/app/tomcat/logs/server_seperated.log
+/app/tomcat/logs/sfmail.log
+/app/tomcat/logs/csrf.log.2018-12-10
+/app/tomcat/logs/catalina.out
+/app/tomcat/logs/rbpusageaudit.log.2018-12-10
+/app/tomcat/logs/perf.log
+/app/tomcat/logs/gclog/gcverbose.mo-4c6b4b8c5.log
+/app/tomcat/logs/gclog/sapjvm_gc.mo-4c6b4b8c5.prf
+/app/tomcat/logs/csrf.log
+/app/tomcat/logs/rbpusageaudit.log
+/app/tomcat/logs/sfmail.log.2018-12-10
+/app/tomcat/logs/appsec.log
+/app/tomcat/logs/server.log.2018-12-10.1
+/app/tomcat/logs/perf.log.2018-12-10
+/app/tomcat/logs/server_seperated.log.2018-12-10
+/app/tomcat/logs/appsec.log.2018-12-10
+/app/tomcat/temp
+find: ‘/app/tomcat/temp/iron.jacamar’: Permission denied
+/app/tomcat/temp/+~JF6745894606838050615.tmp
+find: ‘/app/tomcat/temp/GeneratedByCommonObjectAPI_sfuser_20181210052829’: Permission denied
+find: ‘/app/tomcat/temp/workspace_40a690cb-d24a-44f0-8de8-7a97897455aa’: Permission denied
+/app/tomcat/temp/upload_208f353f_81ed_4400_9429_2a14fe018983_00004571.tmp
+find: ‘/app/tomcat/temp/packages’: Permission denied
+find: ‘/app/tomcat/work’: Permission denied
+find: ‘/app/tomcat/PutObjectStoreDirHere’: Permission denied
+find: ‘/app/tomcat/data’: Permission denied
+find: ‘/app/optier/data/config/fromServer/d029a857-21f2-4913-a4d4-14b0566d3328’: Permission denied
+/app/optier/data/corefirst/logs
+/app/optier/data/corefirst/logs/cf-jvm-runtime-tomcat-Catalina-8080-sfuser.log.5
+/app/optier/data/corefirst/logs/cf-jvm-runtime-tomcat-Catalina-8080-sfuser.log.3
+/app/optier/data/corefirst/logs/cf-jvm-instrumentation-runtime-tomcat-Catalina-8080-sfuser.log.1
+/app/optier/data/corefirst/logs/cf-jvm-runtime-tomcat-Catalina-8080-sfuser.log.2
+/app/optier/data/corefirst/logs/cf-jvm-runtime-tomcat-Catalina-8080-sfuser.log
+/app/optier/data/corefirst/logs/cf-jvm-runtime-tomcat-Catalina-8080-sfuser.log.1
+/app/optier/data/corefirst/logs/cf-jvm-runtime-tomcat-Catalina-8080-sfuser.log.4
+/app/optier/data/corefirst/logs/cf-jvm-instrumentation-runtime-tomcat-Catalina-8080-sfuser.log
+find: ‘/app/optier/data/corefirst/instrumentation’: Permission denied
+/app/optier/data/corefirst/contextagent/DataFiles/cf-sending/d029a857-21f2-4913-a4d4-14b0566d3328
+find: ‘/app/optier_old/data/config/fromServer/721dc2b9-ecdd-4bd2-8969-7b721e845169’: Permission denied
+find: ‘/app/optier_old/data/corefirst/instrumentation’: Permission denied
+find: ‘/nfs/shared/sfapache_dc12prev/.w3m’: Permission denied
+find: ‘/nfs/shared/test1/lost+found’: Permission denied
+/nfs/applogs/ooppookk
+/nfs/applogs/ooppookk/rbpusageaudit.log.2018-12-10.gz
+/nfs/applogs/ooppookk/sfmail.log.2018-12-10.gz
+/nfs/applogs/ooppookk/server.log.2018-12-10.1.gz
+/nfs/applogs/ooppookk/perf.log.2018-12-10.gz
+/nfs/applogs/ooppookk/server_seperated.log.2018-12-10.gz
+/nfs/applogs/ooppookk/server_infolevel.log.2018-12-10.1.gz
+/nfs/applogs/ooppookk/appsec.log.2018-12-10.gz
+/nfs/applogs/rgrgrgrgrg
+/nfs/applogs/rgrgrgrgrg/server.log.2018-12-10.1.gz
+/nfs/applogs/rgrgrgrgrg/perf.log.2018-12-10.gz
+/nfs/applogs/rgrgrgrgrg/server_infolevel.log.2018-12-10.1.gz
+/nfs/applogs/rgrgrgrgrg/rbpusageaudit.log.2018-12-10.gz
+/nfs/applogs/rgrgrgrgrg/appsec.log.2018-12-10.gz
+/nfs/applogs/rgrgrgrgrg/server_seperated.log.2018-12-10.gz
+find: ‘/etc/sv/mcollective/log/supervise’: Permission denied
+find: ‘/etc/sv/mcollective/supervise’: Permission denied
+find: ‘/etc/sudoers.d’: Permission denied
+find: ‘/etc/audit’: Permission denied
+find: ‘/etc/ssl/private’: Permission denied
+find: ‘/etc/skel/.local’: Permission denied
+find: ‘/etc/skel/.config’: Permission denied
+find: ‘/etc/audisp’: Permission denied
+find: ‘/etc/news’: Permission denied
+
+mo-4c6b4b8c5[sc12bcf07t]:~ # ^C
+mo-4c6b4b8c5[sc12bcf07t]:~ # find . -mmin -600
+mo-4c6b4b8c5[sc12bcf07t]:~ # find . -mmin -6000
+.
+./.local
+./.local/share
+./.local/share/systemd
+./.local/share/systemd/user
+./bin
+./.muttrc
+./.fonts
+./.emacs
+./.profile
+./.bashrc
+./.inputrc
+./.bash_history
+./.config
+./.lesshst
+./-u pungki
+./-aux --sort -pcpu
+./tory | lessq
+mo-4c6b4b8c5[sc12bcf07t]:~ #
+
+找到在1个小时内被更改的文件
+想要通过文件修改时间找出文件，可以使用参数 -mmin -mtime。下面是man手册中有关mmin和mtime的定义。
+
+-mmin n 文件最后一次修改是在n分钟之内
+-mtime n 文件最后一次修改是在 n*24小时之内（译者注：也就是n天了呗）
+执行下面例子中的命令，将会找到当前目录以及其子目录下，最近一次修改时间在1个小时（60分钟）之内的文件或目录
+
+# find . -mmin -60
+同样的方式，执行下面例子中的命令，将会找到24小时（1天）内修改了的文件（文件系统根目录 / 下）
+
+# find / -mtime -1
+
+找到1个小时内被访问过的文件
+想要通过文件访问时间找出文件，可以使用参数 -amin -atime。下面是man手册中有关amin和atime的定义。
+
+-amin n 文件最后一次访问是在n分钟之内
+-atime n 文件最后一次访问是在 n*24小时之内
+执行下面例子中的命令，将会找到当前目录以及其子目录下，最近一次访问时间在1个小时（60分钟）之内的文件或目录
+
+# find . -amin -60
+同样的方式，执行下面例子中的命令，将会找到24小时（1天）内被访问了的文件（文件系统根目录 / 下）
+
+# find / -atime -1
+
+在find命令输出上使用 ls -l， 列举出1小时内被编辑过的文件的详细信息
+# find -mmin -60
+./cron
+./secure
+
+# find -mmin -60 -exec ls -l {} \;
+-rw-------  1 root root 1028 Jun 21 15:01 ./cron
+-rw-------  1 root root 831752 Jun 21 15:42 ./secure
+例10：仅仅在当前文件系统中搜索
+系统管理员有时候仅仅想在/挂载的文件系统分区上搜索，而不想去搜索其他的挂载分区，比如/home/挂载分区。
+如果你有多个分区被挂载了，你想在/下搜索，一般可以按下面的这样做
+
+下面这个命令会搜索根目录/及其子目录下所有.log结尾的文件名。如果你有多个分区在/下面，那么这个搜索会去搜索所有的被挂载的分区：
+
+# find / -name "*.log"
+如果我们使用-xdev选项，那么仅仅会在在当前文件系统中搜索，下面是在xdev的man page上面找到的一段-xdev的定义：
+-xdev Don’t descend directories on other filesystems.
+下面的命令会在/目录及其子目录下搜索当前文件系统(也就是/挂载的文件系统)中所有以.log结尾的文件，也就是说如果你有多个分区挂载在/下面，
+下面的搜索不会去搜索其他的分区的（比如/home/）
+
+# find / -xdev -name "*.log"
+
