@@ -156,3 +156,16 @@ mo-4c6b4b8c5[sc12bcf07t]:~ #
 
 # find / -name "*.log"
 
+
+
+一旦连接了多个系统，用户就可以如下在系统 Z、X 和 Y 上执行 uname -n 命令（来显示节点名）：
+
+$ uname -n
+Z
+$ ~!uname -n
+X
+$ ~~!uname -n
+Y
+
+zzzzzz-7aede8aa6[gggggggg]:~ # uname -n
+zzzzzz-7aede8aa6.yyyyyyy.saas.xyz.corp
