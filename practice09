@@ -169,3 +169,16 @@ Y
 
 zzzzzz-7aede8aa6[gggggggg]:~ # uname -n
 zzzzzz-7aede8aa6.yyyyyyy.saas.xyz.corp
+
+
+
+uname TOP VIEW_AS_PAGE
+As its man page says, uname prints out various system information. In the simplest form:
+$ uname
+Linux
+
+If you use the -a flag for all, you get all sorts of information:
+$ uname -a
+Linux my.system 2.6.32-431.11.2.el6.x86_64 #1 SMP Tue Mar 25 19:59:55 \
+UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
