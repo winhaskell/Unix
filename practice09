@@ -182,3 +182,17 @@ $ uname -a
 Linux my.system 2.6.32-431.11.2.el6.x86_64 #1 SMP Tue Mar 25 19:59:55 \
 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 
+ ls -lih
+ Linux 文件或目录的属性主要包括：文件或目录的节点、种类、权限模式、链接数量、所归属的用户和用户组、最近访问或修改的时间等内容。
+ 
+mo-7aede8aa6[hhhhhhhhhhh]:~ # ls -lih
+total 52K
+81179483 lrwxrwxrwx 1 ggggggggg domain users      12 Dec 12 12:43 adjtimex -> /bin/busybox
+81179481 -rw-r--r-- 1 ggggggggg    bin           13K Dec 10 10:17 -aux --sort -pcpu
+81174654 drwxr-xr-x 2 ggggggggg domain users    4.0K Dec  7 15:35 bin
+81179484 -rw-r--r-- 1 ggggggggg domain users    0    Dec 12 14:10 test
+81179485 drwxr-xr-x 4 ggggggggg domain users    4.0K Dec 12 14:10 tmp
+81179482 -rw-r--r-- 1 ggggggggg domain users     12K Dec 10 11:12 tory | lessq
+81179480 -rw-r--r-- 1 ggggggggg    bin           14K Dec 10 09:51 -u pungki
+
+
