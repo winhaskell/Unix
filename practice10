@@ -747,3 +747,17 @@ systemd(1)─┬─VGAuthService(1774)
                                   └─zabbix-agentd(49036)
 mo-cdf2459a3[sc12bcf03t]:~ #
 
+ # vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache     si   so    bi    bo   in   cs us sy id wa st
+ 3  0  96100 8978004 783252 8511740    0    0     0     7    1    0  4  0 95  0                                                                         0
+
+vmstat 的输出 指标的问了下去 操作系统的细节实现问题 
+
+Intel CPU / protection ring
+User-mode / kernel-mode  
+进程的状态切换流程
+wait time
+抢占式内核
+free/buff/cache memory 区别
+
