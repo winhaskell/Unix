@@ -761,3 +761,67 @@ wait time
 抢占式内核
 free/buff/cache memory 区别
 
+
+
+mo-0131c4138[hhhhhhhhhhh]:~ # df -k
+
+Filesystem                                                                      1K-blocks       Used  Available Use% Mounted on
+/dev/mapper/vg_sys_r1-root                                                       33126192    2831480   28605320  10% /
+devtmpfs                                                                         24492332          8   24492324   1% /dev
+tmpfs                                                                             8388608          0    8388608   0% /dev/shm
+tmpfs                                                                            24515704    1836372   22679332   8% /run
+tmpfs                                                                            24515704          0   24515704   0% /sys/fs/cgroup
+/dev/mapper/vg_sys_r1-tmp                                                        10972796     809464    9635756   8% /tmp
+/dev/mapper/vg_sys_r1-home                                                        3014608     607548    2250596  22% /home
+/dev/mapper/vg_sys_r1-vminfo                                                       999320       1320     945572   1% /vminfo
+/dev/mapper/vgsaas-app                                                           51475068    6096048   42757580  13% /app
+/dev/mapper/vg_sys_r1-var                                                        10778544    2267040    8006984  23% /var
+/dev/mapper/vg_sys_r1-opt                                                        10972796     590064    9855156   6% /opt
+/dev/sda1                                                                          294236      76995     201625  28% /boot
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_app_log_01/q_bizx_app_log_01          1073741824 1047101632   26640192  98% /nfs/applogs
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_release_01/q_bizx_release_01           524288000  131202560  393085440  26% /release
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_Heapdumps/q_bizx_Heapdumps/sc12bcf05t 1073741824   57516864 1016224960   6% /dumps
+10.117.228.19:/vol1_bizx_birt_S2_preview01                                      629145600      65984  629079616   1% /bizx/birt
+10.117.224.19:/vol_automation01                                                 681574400  574312640  107261760  85% /automation
+10.117.224.19:/vol_export_home01                                                104857600   10659712   94197888  11% /home/roaming
+mo-0131c4138[sc12bcf05t]:~ #
+
+
+
+
+mo-0131c4138[sc12bcf05t]:~ # df -la
+
+Filesystem                   1K-blocks    Used Available Use% Mounted on
+rootfs                               -       -         -    - /
+sysfs                                0       0         0    - /sys
+proc                                 0       0         0    - /proc
+devtmpfs                      24492332       8  24492324   1% /dev
+securityfs                           0       0         0    - /sys/kernel/security
+tmpfs                          8388608       0   8388608   0% /dev/shm
+devpts                               0       0         0    - /dev/pts
+tmpfs                         24515704 1836372  22679332   8% /run
+tmpfs                         24515704       0  24515704   0% /sys/fs/cgroup
+cgroup                               0       0         0    - /sys/fs/cgroup/systemd
+pstore                               0       0         0    - /sys/fs/pstore
+cgroup                               0       0         0    - /sys/fs/cgroup/cpuset
+cgroup                               0       0         0    - /sys/fs/cgroup/cpu,cpuacct
+cgroup                               0       0         0    - /sys/fs/cgroup/memory
+cgroup                               0       0         0    - /sys/fs/cgroup/devices
+cgroup                               0       0         0    - /sys/fs/cgroup/freezer
+cgroup                               0       0         0    - /sys/fs/cgroup/blkio
+cgroup                               0       0         0    - /sys/fs/cgroup/perf_event
+cgroup                               0       0         0    - /sys/fs/cgroup/hugetlb
+/dev/mapper/vg_sys_r1-root    33126192 2831480  28605320  10% /
+systemd-1                            -       -         -    - /proc/sys/fs/binfmt_misc
+hugetlbfs                            0       0         0    - /dev/hugepages
+mqueue                               0       0         0    - /dev/mqueue
+debugfs                              0       0         0    - /sys/kernel/debug
+/dev/mapper/vg_sys_r1-tmp     10972796  809464   9635756   8% /tmp
+/dev/mapper/vg_sys_r1-home     3014608  607548   2250596  22% /home
+/dev/mapper/vg_sys_r1-vminfo    999320    1320    945572   1% /vminfo
+/dev/mapper/vgsaas-app        51475068 6097664  42755964  13% /app
+/dev/mapper/vg_sys_r1-var     10778544 2267048   8006976  23% /var
+/dev/mapper/vg_sys_r1-opt     10972796  590088   9855132   6% /opt
+/dev/sda1                       294236   76995    201625  28% /boot
+binfmt_misc                          0       0         0    - /proc/sys/fs/binfmt_misc
+mo-0131c4138[sc12bcf05t]:~ #
