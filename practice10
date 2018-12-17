@@ -825,3 +825,15 @@ debugfs                              0       0         0    - /sys/kernel/debug
 /dev/sda1                       294236   76995    201625  28% /boot
 binfmt_misc                          0       0         0    - /proc/sys/fs/binfmt_misc
 mo-0131c4138[sc12bcf05t]:~ #
+
+
+$ echo $((($(date +%s)-$(date +%s --date "1999-12-28"))/(3600*24))) days
+6586 days
+
+
+mo-0131c4138[yyyyyyyyyy]:~ #  echo $((($(date +%s)-$(date +%s --date "2008-12-18"))/(3600*24))) days
+3651 days
+mo-0131c4138[yyyyyyyyyy]:~ #  echo $((($(date +%s)-$(date +%s --date "2008-12-17"))/(3600*24))) days
+3652 days
+
+
