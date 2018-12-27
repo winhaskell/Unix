@@ -252,4 +252,40 @@ man文档（man find、man grep）
 https://docs.cs.cf.ac.uk/notes/linux-shell-commands/#status
 
 
+awk
+删除重复行
+
+$ awk '!($0 in array) { array[$0]; print}' temp
+打印/etc/passwd中所有包含同样的uid和gid的行
+
+$ awk -F ':' '$3=$4' /etc/passwd
+打印文件中的指定部分的字段
+
+$ awk '{print $2,$5;}' employee.txt
+
+
+
+
+export
+输出跟字符串oracle匹配的环境变量
+
+$ export | grep ORCALE
+declare -x ORACLE_BASE="/u01/app/oracle"
+declare -x ORACLE_HOME="/u01/app/oracle/product/10.2.0"
+declare -x ORACLE_SID="med"
+declare -x ORACLE_TERM="xterm"
+设置全局环境变量
+
+$ export ORACLE_HOME=/u01/app/oracle/product/10.2.0
+
+mo-acbbaa0c3[sc12bcf01t]:~ #  ls -lh
+total 440K
+lrwxrwxrwx 1 i999999 domain users   12  Dec 12 12:43 adjtimex -> /bin/busybox
+-rw-r--r-- 1 root    bin           13K  Dec 10 10:17 -aux --sort -pcpu
+drwxr-xr-x 2 i999999  domain users 4.0K Dec  7 19:35 bin
+-rw-r--r-- 1 i999999  domain users 382K Apr 28  2001 download?source=files
+-rw-r--r-- 1 i999999  domain users    0 Dec 12 14:10 test
+drwxr-xr-x 4 i999999  domain users 4.0K Dec 12 13:05 tmp
+-rw-r--r-- 1 i999999  domain users  12K Dec 10 11:12 tory | lessq
+-rw-r--r-- 1 root    bin           14K  Dec 20 09:51 -u pungki
 
