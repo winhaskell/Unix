@@ -289,3 +289,28 @@ drwxr-xr-x 4 i999999  domain users 4.0K Dec 12 13:05 tmp
 -rw-r--r-- 1 i999999  domain users  12K Dec 10 11:12 tory | lessq
 -rw-r--r-- 1 root    bin           14K  Dec 20 09:51 -u pungki
 
+
+
+ps
+ps命令用于显示正在运行中的进程的信息，ps命令有很多选项，这里只列出了几个
+
+查看当前正在运行的所有进程
+
+$ ps -ef | more
+以树状结构显示当前正在运行的进程，H选项表示显示进程的层次结构
+
+$ ps -efH | more
+
+
+free
+这个命令用于显示系统当前内存的使用情况，包括已用内存、可用内存和交换内存的情况
+
+默认情况下free会以字节为单位输出内存的使用量
+
+
+mo-acbbaa0c3[tygewfwqdwd]:~ # free
+             total       used       free     shared    buffers     cached
+Mem:      49031408   39591944    9439464    2043208     888980   10851456
+-/+ buffers/cache:   27851508   21179900
+Swap:      3129340      83020    3046320
+mo-acbbaa0c3[sc12bcf01t]:~ #
