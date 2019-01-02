@@ -90,3 +90,14 @@ drwxr-xr-x 111 root   root       12288 Jan  2 01:07 etc
 drwxr-xr-x  32 root   root         960 Jan  2 01:07 run
 drwxrwxrwt  27 root   root       20480 Jan  2 14:23 tmp
 
+
+How to check ,how much space is left on the current drive in Unix
+df -h
+
+How to see which process is taking how much time in Unix
+top
+
+
+How to find ,how many times a word is there in File
+grep -c <word to find> <FileName>
+Example : grep -c Hi abcd.txt
