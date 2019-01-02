@@ -43,3 +43,16 @@ derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_release_01/q_bizx_release_01           
 10.117.224.19:/vol_automation01                                                 650G  546G  105G  84% /automation
 10.117.228.19:/vol1_bizx_birt_S2_preview01                                      600G  126M  600G   1% /bizx/birt
 derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_Heapdumps/q_bizx_Heapdumps/sc12bcf01t  1.0T   70G  955G   7% /dumps
+
+
+
+mo-acbbaa0c3[uuuuuu]:/ #  echo $PATH
+/home/roaming/I356338/bin:/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/lib/mit/bin
+
+mo-acbbaa0c3[uuuuuu]:/ #
+
+
+https://www.tldp.org/LDP/intro-linux/html/sect_03_03.html
+https://www.tldp.org/LDP/intro-linux/html/sect_03_02.html
+https://www.tldp.org/LDP/intro-linux/html/sect_03_01.html
+
