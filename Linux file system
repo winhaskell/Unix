@@ -101,3 +101,14 @@ top
 How to find ,how many times a word is there in File
 grep -c <word to find> <FileName>
 Example : grep -c Hi abcd.txt
+
+
+
+How to find all the files with certain content in Unix
+
+find . –name <type of files to be searched> | xargs grep <content to be matched>
+
+Example :
+
+find . -name "*.txt" | xargs grep "Hi"
+
