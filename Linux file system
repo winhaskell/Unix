@@ -52,6 +52,14 @@ mo-acbbaa0c3[uuuuuu]:/ #  echo $PATH
 mo-acbbaa0c3[uuuuuu]:/ #
 
 
+
+
+mo-acbbaa0c3[uuuuuu]:/ # ls -l /bin/ls
+lrwxrwxrwx 1 root root 11 May 11  2018 /bin/ls -> /usr/bin/ls
+mo-acbbaa0c3[uuuuuu]:/ #
+
+
+
 https://www.tldp.org/LDP/intro-linux/html/sect_03_03.html
 https://www.tldp.org/LDP/intro-linux/html/sect_03_02.html
 https://www.tldp.org/LDP/intro-linux/html/sect_03_01.html
