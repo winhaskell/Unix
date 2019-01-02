@@ -13,7 +13,7 @@ dmesg | tail
 vmstat 1
 mpstat -P ALL 1
 
-mo-acbbaa0c3[sc12bcf01t]:~ # mpstat -P ALL 1
+monjnz-acbbaa0ck[sc12bcf01t]:~ # mpstat -P ALL 1
 Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/02/2019      _x86_64_        (8 CPU)
 
 07:41:43 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
@@ -30,7 +30,7 @@ Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/0
 
 pidstat 1
 
-mo-acbbaa0c3[sc12bcf01t]:~ # pidstat 1
+monjnz-acbbaa0ck[sc12bcf01t]:~ # pidstat 1
 Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/02/2019      _x86_64_        (8 CPU)
 
 07:43:10 AM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
@@ -59,7 +59,7 @@ Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/0
 
 iostat -xz 1
 
-mo-acbbaa0c3[sc12bcf01t]:~ # iostat -xz 1
+monjnz-acbbaa0ck[sc12bcf01t]:~ # iostat -xz 1
 Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/02/2019      _x86_64_        (8 CPU)
 
 avg-cpu:  %user   %nice %system %iowait  %steal   %idle
@@ -86,9 +86,66 @@ dm-7              0.00     0.00    0.00    0.00     0.00     0.00     7.99     0
 free -m
 sar -n DEV 1
 sar -n TCP,ETCP 1
+
+
 top
+monjnz-acbbaa0ck[uuuuuu]:~ # top
+top - 07:54:25 up 80 days, 19:07,  1 user,  load average: 0.04, 0.08, 0.13
+Tasks: 188 total,   1 running, 187 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+KiB Mem:  49031408 total, 40906036 used,  8125372 free,   891548 buffers
+KiB Swap:  3129340 total,    83020 used,  3046320 free. 11094408 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 7043 root      20   0  379732  57220   3796 S 6.250 0.117  77:31.13 sssd_be
+15077 sfuser    20   0 43.598g 0.026t  19128 S 6.250 57.14   1478:28 java
+    1 root      20   0  181844   4928   2184 S 0.000 0.010   8:27.48 systemd
+    2 root      20   0       0      0      0 S 0.000 0.000   0:01.12 kthreadd
+    3 root      20   0       0      0      0 S 0.000 0.000   5:47.70 ksoftirqd/0
+    5 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/0:0H
+    7 root      rt   0       0      0      0 S 0.000 0.000   0:22.26 migration/0
+    8 root      20   0       0      0      0 S 0.000 0.000   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S 0.000 0.000  35:19.44 rcu_sched
+   10 root      rt   0       0      0      0 S 0.000 0.000   0:10.46 watchdog/0
+   11 root      rt   0       0      0      0 S 0.000 0.000   0:08.99 watchdog/1
+   12 root      rt   0       0      0      0 S 0.000 0.000   0:22.74 migration/1
+   13 root      20   0       0      0      0 S 0.000 0.000   5:39.16 ksoftirqd/1
+   15 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/1:0H
+   16 root      rt   0       0      0      0 S 0.000 0.000   0:08.69 watchdog/2
+   17 root      rt   0       0      0      0 S 0.000 0.000   0:22.68 migration/2
+   18 root      20   0       0      0      0 S 0.000 0.000   5:31.32 ksoftirqd/2
+   20 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/2:0H
+   21 root      rt   0       0      0      0 S 0.000 0.000   0:08.34 watchdog/3
+   22 root      rt   0       0      0      0 S 0.000 0.000   0:22.63 migration/3
+
+mo-acbbaa0c3[sc12bcf01t]:~ # who
+uuuuuu  pts/0        2019-01-02 07:11 (172.16.28.194)
+
+%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+
+The “memory” section shows information regarding the memory usage of the system. The lines marked “Mem” and “Swap” show information
+about RAM and swap space respectively. Simply put, a swap space is a part of the hard disk that is used like RAM. When the RAM usage
+gets nearly full, infrequently used regions of the RAM are written into the swap space, ready to be retrieved later when needed. 
+However, because accessing disks are slow, relying too much on swapping can harm system performance.
+
+As you would naturally expect, the “total”, “free” and “used” values have their usual meanings. 
+The “avail mem” value is the amount of memory that can be allocated to processes without causing more swapping.
+
+The Linux kernel also tries to reduce disk access times in various ways. It maintains a “disk cache” in RAM, 
+where frequently used regions of the disk are stored. In addition, disk writes are stored to a “disk buffer”, 
+and the kernel eventually writes them out to the disk. The total memory consumed by them is the “buff/cache” value. 
+It might sound like a bad thing, but it really isn’t — memory used by the cache will be allocated to processes if needed.
+
+
+System time, uptime and user sessions
+
+
 
 其中一些命令需要安装 sysstat 包，有一些由 procps 包提供。
 这些命令的输出，有助于快速定位性能瓶颈，检查出所有资源（CPU、内存、磁盘 IO 等）的利用率（utilization）、饱和度（saturation）和错误（error）度量，
 也就是所谓的USE方法。
+
+
+https://www.booleanworld.com/guide-linux-top-command/
+
 
