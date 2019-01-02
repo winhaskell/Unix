@@ -67,3 +67,26 @@ https://www.tldp.org/LDP/intro-linux/html/sect_03_01.html
 
 https://www.tldp.org/LDP/intro-linux/html/index.html
 
+
+mo-acbbaa0c3[uuuuuu]:/ # ls -lrt | grep ab*
+total 136249
+drwx------   2 root   root       16384 May 11  2017 lost+found
+drwxr-xr-x   3 root   root        4096 May 29  2017 vminfo
+drwxr-xr-x   4 root   root        4096 May 29  2017 nfs
+drwxr-xr-x   4 sfuser sfuser      4096 May 29  2017 dumps
+drwxr-xr-x   3 root   root        4096 May 29  2017 export
+drwxr-xr-x   2 root   root        4096 Mar 29  2018 selinux
+dr-xr-xr-x 202 root   root           0 Mar 29  2018 proc
+drwxr-xr-x  10 root   root        4096 Mar 29  2018 opt
+drwxr-xr-x   2 root   root        4096 Mar 29  2018 mnt
+drwxr-xr-x   7 root   root        4096 Mar 29  2018 home
+dr-xr-xr-x  12 root   root           0 Mar 29  2018 sys
+drwxr-xr-x   5 root   root        4096 Mar 29  2018 srv
+drwxr-xr-x  15 root   root        4096 Oct 13 13:05 var
+drwxr-xr-x  57 nobody nobody     45056 Nov 16 08:00 release
+drwxr-xr-x  11 sfuser sfuser      4096 Dec 21 23:32 app
+drwxr-xr-x 155 root   root       24576 Dec 26 07:16 automation
+drwxr-xr-x 111 root   root       12288 Jan  2 01:07 etc
+drwxr-xr-x  32 root   root         960 Jan  2 01:07 run
+drwxrwxrwt  27 root   root       20480 Jan  2 14:23 tmp
+
