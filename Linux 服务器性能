@@ -172,7 +172,24 @@ The amount of time lost in this way is the “steal” time, shown as st.
 
 
 
+Load average
+load average: 0.04, 0.08, 0.13
 
+The load average section represents the average “load” over one, five and fifteen minutes. 
+“Load” is a measure of the amount of computational work a system performs. 
+On Linux, the load is the number of processes in the R and S states at any given moment. 
+The “load average” value gives you a relative measure of how long you must wait for things to get done.
+
+Let us consider a few examples to understand this concept. On a single core system, a load average of 0.4 means 
+the system is doing only 40% of work it can do. A load average of 1 means that the system is exactly at capacity — the 
+system will be overloaded by adding even a little bit of additional work. A system with a load average of 2.12 means
+that it is overloaded by 112% more work than it can handle.
+
+On a multi-core system, you should first divide the load average with the number of CPU cores to get a similar measure.
+
+In addition, “load average” isn’t actually the typical “average” most of us know. It is an “exponential moving average“, 
+which means a small part of the previous load averages are factored into the current value. If you’re interested, 
+this article covers all the technical details.
 
 
 
