@@ -146,6 +146,35 @@ The “total” value is simply the total number of processes. For example, in t
 To understand the rest of the values, we need a little bit of background on how the Linux kernel handles processes.
 
 
+CPU usage
+%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+
+The CPU usage section shows the percentage of CPU time spent on various tasks. 
+The us value is the time the CPU spends executing processes in userspace. Similarly, 
+the sy value is the time spent on running kernelspace processes.
+
+Linux uses a “nice” value to determine the priority of a process. A process with a high “nice” value is “nicer” to other processes, 
+and gets a low priority. Similarly, processes with a lower “nice” gets higher priority. 
+As we shall see later, the default “nice” value can be changed. The time spent on executing processes with a manually set
+“nice” appear as the ni value.
+
+This is followed by id, which is the time the CPU remains idle. Most operating systems put the CPU on a power saving mode 
+when it is idle. Next comes the wa value, which is the time the CPU spends waiting for I/O to complete.
+
+Interrupts are signals to the processor about an event that requires immediate attention. Hardware interrupts are 
+typically used by peripherals to tell the system about events, such as a keypress on a keyboard. On the other hand, 
+software interrupts are generated due to specific instructions executed on the processor. In either case, the OS handles them, 
+and the time spent on handling hardware and software interrupts are given by hi and si respectively.
+
+In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). 
+The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. 
+The amount of time lost in this way is the “steal” time, shown as st.
+
+
+
+
+
+
 
 其中一些命令需要安装 sysstat 包，有一些由 procps 包提供。
 这些命令的输出，有助于快速定位性能瓶颈，检查出所有资源（CPU、内存、磁盘 IO 等）的利用率（utilization）、饱和度（saturation）和错误（error）度量，
