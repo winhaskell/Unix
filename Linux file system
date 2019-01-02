@@ -1,0 +1,45 @@
+Linux file system
+
+mo-acbbaa0c3[sc12bcf01t]:/ # ls -l
+total 136249
+drwxr-xr-x  11 sfuser sfuser      4096 Dec 21 23:32 app
+drwxr-xr-x 155 root   root       24576 Dec 26 07:16 automation
+drwxr-xr-x   2 root   root        4096 Oct 13 13:06 bin
+drwxr-xr-x   3 root   root        4096 Nov 28  2017 bizx
+drwxr-xr-x   5 root   root        1024 Oct 13 13:08 boot
+-rw-------   1 root   root   178417664 Sep 10  2017 core.42549
+drwxr-xr-x  19 root   root        4100 Oct 13 13:08 dev
+
+
+mo-acbbaa0c3[sc12bcf01t]:~ # df -h .
+Filesystem                        Size  Used Avail Use% Mounted on
+10.117.224.19:/vol_export_home01  100G   11G   90G  11% /home/roaming
+
+
+mo-acbbaa0c3[sc12bcf01t]:/ # ls
+app         boot        etc     lib64       opt      run      sys  vminfo
+automation  core.42549  export  lost+found  proc     sbin     tmp
+bin         dev         home    mnt         release  selinux  usr
+bizx        dumps       lib     nfs         root     srv      var
+
+
+mo-acbbaa0c3[sc12bcf01t]:/ # df -h
+Filesystem                                                                      Size  Used Avail Use% Mounted on
+/dev/mapper/vg_sys_r1-root                                                       32G  2.8G   28G  10% /
+devtmpfs                                                                         24G  8.0K   24G   1% /dev
+tmpfs                                                                           8.0G     0  8.0G   0% /dev/shm
+tmpfs                                                                            24G  2.3G   22G  10% /run
+tmpfs                                                                            24G     0   24G   0% /sys/fs/cgroup
+/dev/mapper/vg_sys_r1-tmp                                                        11G  1.4G  8.7G  14% /tmp
+/dev/sda1                                                                       288M   76M  197M  28% /boot
+/dev/mapper/vg_sys_r1-vminfo                                                    976M  1.3M  924M   1% /vminfo
+/dev/mapper/vg_sys_r1-home                                                      2.9G  594M  2.2G  22% /home
+/dev/mapper/vg_sys_r1-opt                                                        11G  561M  9.5G   6% /opt
+/dev/mapper/vg_sys_r1-var                                                        11G  4.3G  5.6G  44% /var
+/dev/mapper/vgsaas-app                                                           50G  6.5G   41G  14% /app
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_app_log_01/q_bizx_app_log_01           1.0T  760G  265G  75% /nfs/applogs
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_release_01/q_bizx_release_01           500G  126G  375G  26% /release
+10.117.224.19:/vol_export_home01                                                100G   11G   90G  11% /home/roaming
+10.117.224.19:/vol_automation01                                                 650G  546G  105G  84% /automation
+10.117.228.19:/vol1_bizx_birt_S2_preview01                                      600G  126M  600G   1% /bizx/birt
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_Heapdumps/q_bizx_Heapdumps/sc12bcf01t  1.0T   70G  955G   7% /dumps
