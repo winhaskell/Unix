@@ -66,6 +66,7 @@ https://www.tldp.org/LDP/intro-linux/html/sect_03_02.html
 https://www.tldp.org/LDP/intro-linux/html/sect_03_01.html
 
 https://www.tldp.org/LDP/intro-linux/html/index.html
+https://www.oracle.com/technetwork/cn/articles/calish-file-commands-082770-zhs.html
 
 
 mo-acbbaa0c3[uuuuuu]:/ # ls -lrt | grep ab*
