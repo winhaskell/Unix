@@ -39,3 +39,40 @@ tmpfs                        tmpfs      24G     0   24G   0% /sys/fs/cgroup
 /dev/mapper/vg_sys_r1-vminfo ext3      976M  1.3M  924M   1% /vminfo
 /dev/mapper/vg_sys_r1-var    ext3       11G  2.1G  7.8G  22% /var
 /dev/mapper/vg_sys_r1-home   ext3      2.9G  594M  2.2G  22% /home
+
+
+mo-7aede8aa6[sc12bcf08t]:~ # mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,size=24505856k,nr_inodes=6126464,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,size=8388608k)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (rw,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpuacct,cpu)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+/dev/mapper/vg_sys_r1-root on / type ext3 (rw,noatime,data=ordered)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=27,pgrp=1,timeout=300,minproto=5,maxproto=5,direct)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+/dev/sda1 on /boot type ext3 (rw,noatime,data=ordered)
+/dev/mapper/vgsaas-app on /app type ext3 (rw,noatime,data=ordered)
+/dev/mapper/vg_sys_r1-tmp on /tmp type ext3 (rw,nosuid,nodev,relatime,data=ordered)
+/dev/mapper/vg_sys_r1-vminfo on /vminfo type ext3 (rw,noatime,data=ordered)
+/dev/mapper/vg_sys_r1-var on /var type ext3 (rw,noatime,data=ordered)
+/dev/mapper/vg_sys_r1-home on /home type ext3 (rw,noatime,data=ordered)
+/dev/mapper/vg_sys_r1-opt on /opt type ext3 (rw,noatime,data=ordered)
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_app_log_01/q_bizx_app_log_01 on /nfs/applogs type nfs4 (rw,relatime,vers=4.0,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.117.218.122,local_lock=none,addr=10.117.231.251)
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_release_01/q_bizx_release_01 on /release type nfs4 (rw,relatime,vers=4.0,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.117.218.122,local_lock=none,addr=10.117.231.251)
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_Heapdumps/q_bizx_Heapdumps/sc12bcf08t on /dumps type nfs (rw,relatime,vers=3,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.117.231.251,mountvers=3,mountport=635,mountproto=udp,local_lock=none,addr=10.117.231.251)
+
