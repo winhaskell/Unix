@@ -23,3 +23,19 @@ mo-acbbaa0c3[i9999998]:~ #
 
 
 http://www.informit.com/blogs/blog.aspx?uk=The-10-Most-Important-Linux-Commands
+
+
+df -lhT
+mo-7aede8aa6[i9999998t]:~ # df -lhT
+Filesystem                   Type      Size  Used Avail Use% Mounted on
+/dev/mapper/vg_sys_r1-root   ext3       32G  2.8G   28G  10% /
+devtmpfs                     devtmpfs   24G  8.0K   24G   1% /dev
+tmpfs                        tmpfs     8.0G     0  8.0G   0% /dev/shm
+tmpfs                        tmpfs      24G  1.7G   22G   7% /run
+tmpfs                        tmpfs      24G     0   24G   0% /sys/fs/cgroup
+/dev/sda1                    ext3      288M   87M  186M  32% /boot
+/dev/mapper/vgsaas-app       ext3       50G  7.0G   40G  15% /app
+/dev/mapper/vg_sys_r1-tmp    ext3       11G  640M  9.4G   7% /tmp
+/dev/mapper/vg_sys_r1-vminfo ext3      976M  1.3M  924M   1% /vminfo
+/dev/mapper/vg_sys_r1-var    ext3       11G  2.1G  7.8G  22% /var
+/dev/mapper/vg_sys_r1-home   ext3      2.9G  594M  2.2G  22% /home
