@@ -427,3 +427,41 @@ mo-acbbaa0c3[9999uuuu]:~ #
 
 
 
+
+mo-acbbaa0c3[9999uuuu]:~ # df /dev/sda1
+Filesystem     1K-blocks  Used Available Use% Mounted on
+/dev/sda1         294236 76995    201625  28% /boot
+
+
+mo-acbbaa0c3[9999uuuu]:~ # df
+Filesystem                                                                      1K-blocks      Used Available Use% Mounted on
+/dev/mapper/vg_sys_r1-root                                                       33126192   2915964  28520836  10% /
+devtmpfs                                                                         24492332         8  24492324   1% /dev
+tmpfs                                                                             8388608         0   8388608   0% /dev/shm
+tmpfs                                                                            24515704   2368848  22146856  10% /run
+tmpfs                                                                            24515704         0  24515704   0% /sys/fs/cgroup
+/dev/mapper/vg_sys_r1-tmp                                                        10972796   1426360   9018860  14% /tmp
+/dev/sda1                                                                          294236     76995    201625  28% /boot
+/dev/mapper/vg_sys_r1-vminfo                                                       999320      1320    945572   1% /vminfo
+/dev/mapper/vg_sys_r1-home                                                        3014608    607572   2250572  22% /home
+/dev/mapper/vg_sys_r1-opt                                                        10972796    592096   9853124   6% /opt
+/dev/mapper/vg_sys_r1-var                                                        10778544   4481344   5792680  44% /var
+/dev/mapper/vgsaas-app                                                           51475068   6997836  41855792  15% /app
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_app_log_01/q_bizx_app_log_01          1073741824 803831168 269910656  75% /nfs/applogs
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_release_01/q_bizx_release_01           524288000 131202624 393085376  26% /release
+10.117.224.19:/vol_export_home01                                                104857600  10770464  94087136  11% /home/roaming
+10.117.224.19:/vol_automation01                                                 681574400 568067456 113506944  84% /automation
+10.117.228.19:/vol1_bizx_birt_S2_preview01                                      629145600     74048 629071552   1% /bizx/birt
+derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_Heapdumps/q_bizx_Heapdumps/sc12bcf01t 1073741824 102338880 971402944  10% /dumps
+mo-acbbaa0c3[9999uuuu]:~ #
+
+
+
+
+mo-acbbaa0c3[9999uuuu]:~ # awk 'BEGIN{print 1/4}'
+0.25
+mo-acbbaa0c3[9999uuuu]:~ # awk 'BEGIN{print 1/3}'
+0.333333
+
+
+
