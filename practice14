@@ -403,3 +403,17 @@ x86_64
 mo-acbbaa0c3[9999uuuu]:~ #
 
 
+
+
+
+mo-acbbaa0c3[9999uuuu]:~ # echo $PATH | awk 'BEGIN{RS=":"}{print $1}'
+/home/roaming/9999uuuuuh/bin
+/usr/local/bin
+/usr/bin
+/bin
+/usr/games
+/usr/lib/mit/bin
+mo-acbbaa0c3[9999uuuu]:~ #
+
+
+
