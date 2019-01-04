@@ -391,3 +391,15 @@ zzzzzz  pts/0    111.11.11.193    07:09    1.00s  0.00s  0.00s -sudosh
 mo-acbbaa0c3[zzzzzz]:~ #
 
 
+Arch
+The arch command is used to print the machine's architecture. For example:
+
+$ arch
+i686
+
+
+mo-acbbaa0c3[9999uuuu]:~ # arch
+x86_64
+mo-acbbaa0c3[9999uuuu]:~ #
+
+
