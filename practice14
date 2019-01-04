@@ -497,4 +497,53 @@ opsadmin pts/0        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
 mo-acbbaa0c3[9999uuuu]:~ # hostname
 mo-acbbaa0c3.dc2012.saas.sap.corp
 
+Lsof
+The lsof command displays information (on stdout) related to files opened by processes. 
+Files can be of any type, including regular files, directories, block special files, character special files, executing text reference,
+libraries, and stream/network files.
+
+
+
+mo-acbbaa0c3[9999uuuu]:~ # lsof -u
+lsof: no UIDs specified
+lsof 4.84
+ latest revision: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/
+ latest FAQ: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/FAQ
+ latest man page: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/lsof_man
+ usage: [-?abhKlnNoOPRtUvVX] [+|-c c] [+|-d s] [+D D] [+|-f[gG]]
+ [-F [f]] [-g [s]] [-i [i]] [+|-L [l]] [+m [m]] [+|-M] [-o [o]] [-p s]
+[+|-r [t]] [-s [p:s]] [-S [t]] [-T [t]] [-u s] [+|-w] [-x [fl]] [--] [names]
+Use the ``-h'' option to get more help information.
+mo-acbbaa0c3[9999uuuu]:~ #
+
+
+How to list IDs of processes that have opened a particular file
+The tool allows you to list IDs of processes that have opened a particular file. This can be done by using the -t command line option.
+
+$ lsof -t [file-name]
+For example:
+
+$ lsof -t  /lib/i386-linux-gnu/libaudit.so.1.0.0
+
+
+mo-acbbaa0c3[9999uuuu]:~ # lsof -p
+lsof: no process ID specified
+lsof 4.84
+ latest revision: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/
+ latest FAQ: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/FAQ
+ latest man page: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/lsof_man
+ usage: [-?abhKlnNoOPRtUvVX] [+|-c c] [+|-d s] [+D D] [+|-f[gG]]
+ [-F [f]] [-g [s]] [-i [i]] [+|-L [l]] [+m [m]] [+|-M] [-o [o]] [-p s]
+[+|-r [t]] [-s [p:s]] [-S [t]] [-T [t]] [-u s] [+|-w] [-x [fl]] [--] [names]
+Use the ``-h'' option to get more help information.
+
+mo-acbbaa0c3[9999uuuu]:~ # lsof -t
+14742z
+14746h
+19295g
+19296n
+
+mo-acbbaa0c3[9999uuuu]:~ #
+
+
 
