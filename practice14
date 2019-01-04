@@ -415,5 +415,15 @@ mo-acbbaa0c3[9999uuuu]:~ # echo $PATH | awk 'BEGIN{RS=":"}{print $1}'
 /usr/lib/mit/bin
 mo-acbbaa0c3[9999uuuu]:~ #
 
+RS行记录分隔符，将一行拆分成多行
+
+mo-acbbaa0c3[9999uuuu]:~ # echo '123|456*aaaa|bbb|ccc|ddd' | awk 'BEGIN{FS="|"; RS="*"}{print $2}'
+456
+bbb
+mo-acbbaa0c3[9999uuuu]:~ # echo '123|666*aaaa|bbbcc|ddd' | awk 'BEGIN{FS="|"; RS="*"}{print $2}'
+666
+bbbcc
+mo-acbbaa0c3[9999uuuu]:~ #
+
 
 
