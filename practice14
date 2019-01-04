@@ -465,14 +465,36 @@ mo-acbbaa0c3[9999uuuu]:~ # awk 'BEGIN{print 1/3}'
 
 
 
-mo-acbbaa0c3[sc12bcf01t]:~ # factor 100
+mo-acbbaa0c3[9999uuuu]:~ # factor 100
 100: 2 2 5 5
 
-mo-acbbaa0c3[sc12bcf01t]:~ # free
+mo-acbbaa0c3[9999uuuu]:~ # free
              total       used       free     shared    buffers     cached
 Mem:      49031408   42148904    6882504    2297160     892360   11519828
 -/+ buffers/cache:   29736716   19294692
 Swap:      3129340      83020    3046320
-mo-acbbaa0c3[sc12bcf01t]:~ #
+mo-acbbaa0c3[9999uuuu]:~ #
+
+
+Last
+The last command shows listing of last logged in users.
+
+mo-acbbaa0c3[9999uuuu]:~ # last
+ttt  pts/0        172.16.28.193    Fri Jan  4 07:09   still logged in
+tzt  pts/0        172.16.28.198    Thu Jan  3 10:34 - 11:51  (01:17)
+tjt  pts/0        172.16.28.199    Thu Jan  3 06:40 - 06:58  (00:18)
+opsadmin pts/4        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/3        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/2        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/1        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/0        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/0        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/0        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+opsadmin pts/0        mo-01600d206.dc1 Wed Jan  2 19:04 - 19:04  (00:00)
+
+
+
+mo-acbbaa0c3[9999uuuu]:~ # hostname
+mo-acbbaa0c3.dc2012.saas.sap.corp
 
 
