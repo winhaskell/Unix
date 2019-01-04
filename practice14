@@ -546,4 +546,5 @@ mo-acbbaa0c3[9999uuuu]:~ # lsof -t
 mo-acbbaa0c3[9999uuuu]:~ #
 
 
-
+To get PPID info for a specific PID, you can run the following command:
+$ lsof -p [PID] -R
