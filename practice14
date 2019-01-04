@@ -381,3 +381,13 @@ unix  2      [ ]         DGRAM                    43824
 mo-acbbaa0c3[sc12bcf01t]:~ #
 
 
+
+
+
+mo-acbbaa0c3[zzzzzz]:~ # w
+ 07:16:45 up 82 days, 18:29,  1 user,  load average: 0.01, 0.07, 0.11
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+zzzzzz  pts/0    111.11.11.193    07:09    1.00s  0.00s  0.00s -sudosh
+mo-acbbaa0c3[zzzzzz]:~ #
+
+
