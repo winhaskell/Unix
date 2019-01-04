@@ -76,3 +76,308 @@ derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_app_log_01/q_bizx_app_log_01 on /nfs/ap
 derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_release_01/q_bizx_release_01 on /release type nfs4 (rw,relatime,vers=4.0,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.117.218.122,local_lock=none,addr=10.117.231.251)
 derotvs3058s1.bb21.mo.sap.corp:/vol_bizx_Heapdumps/q_bizx_Heapdumps/sc12bcf08t on /dumps type nfs (rw,relatime,vers=3,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.117.231.251,mountvers=3,mountport=635,mountproto=udp,local_lock=none,addr=10.117.231.251)
 
+
+
+netstat
+
+mo-acbbaa0c3[sc12bcf01t]:~ # netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 mo-acbbaa0c3.dc12:58596 mo-1f014711:lxi-evntsvc ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:49665 10.118.40.106:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:38232 proxy.wdf.sap.:http-alt ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:59891 dc12borasc1n1-:ncube-lm ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:44472 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:50920 10.118.40.106:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:44898 dc12borasc1n2-:ncube-lm ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:42194 10.118.40.107:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:48275 mo-89fda5f95.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:36644 mo-acbbaa0c3.d:http-alt TIME_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:53202 pc12mgtsupx:xmpp-client ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:51417 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0    144 mo-acbbaa0c3.dc12.s:ssh 172.16.28.193:64853     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:36639 mo-acbbaa0c3.d:http-alt TIME_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:36648 mo-acbbaa0c3.d:http-alt TIME_WAIT
+tcp        0      0 localhost:55893         localhos:westec-connect ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:51681 10.118.40.111:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:51774 mo-a689640:XmlIpcRegSvc ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:42181 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:37297 sc12hdbbc704.rot.:30415 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:36205 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 localhos:westec-connect localhost:32891         ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55471 mo-5e5b78546.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12.s:948 derotvs3058s1.bb21.:nfs ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:40426 vhbizxhanadbba805:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:52017 10.118.40.109:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55418 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:48345 sc12hdbbj001.rot.:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:34914 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:58034 vhbizxhanadbba804:30415 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:38010 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        1      0 mo-acbbaa0c3.dc12:53905 ip-10-117-228-:www-http CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:59141 vsa095964.rot.od.s:ldap ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:49140 dc12splunkdeployme:8089 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12.s:844 10.117.228.19:nfs       ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:57060 vsa174497.rot.:palace-6 FIN_WAIT2
+tcp        1      0 mo-acbbaa0c3.dc12:49389 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        1      0 mo-acbbaa0c3.dc12:39070 10.118.248.42:http-alt  CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:60587 amqp2-internal-pr:61613 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:35720 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:58815 mo-e2283343:lxi-evntsvc ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:57491 10.118.40.108:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:34823 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:45963 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0  72856 mo-acbbaa0c3.dc12:41701 vsa1049319.rot:palace-6 ESTABLISHED
+tcp        0      0 localhos:dof-dps-mc-sec localhost:45962         ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:50884 10.118.40.106:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:54382 10.118.40.122:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:52019 10.118.40.109:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:60517 pc12optbt:sunproxyadmin TIME_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:39861 sc12hdbbj003.rot.:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:41579 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:41489 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:46639 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:39238 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0      0 localhos:westec-connect localhost:55894         ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:40424 vhbizxhanadbba805:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:48294 mo-89fda5f95.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:43184 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:41072 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 localhost:45962         localhos:dof-dps-mc-sec ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:51992 mo-89fda5f95.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:36642 mo-acbbaa0c3.d:http-alt TIME_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:43153 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55417 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:36647 mo-acbbaa0c3.d:http-alt TIME_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:46562 mo-6408bb87d.d:eforward ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:50861 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0  62201 mo-acbbaa0c3.dc12:33923 10.118.196.119:palace-6 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:37940 10.118.40.207:30415     ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:41976 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:41655 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0      0 localhos:westec-connect localhost:55893         ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:43176 vsa1789463.rot:palace-6 TIME_WAIT
+tcp        0  80374 mo-acbbaa0c3.dc12:36718 10.118.196.252:palace-6 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:34246 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:43174 vsa1789463.rot:palace-6 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:34274 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:60276 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:50893 10.118.40.106:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:42183 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:34937 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:51924 mo-7195632:XmlIpcRegSvc ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:39896 mo-89fda5f95.dc12.s:x11 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:44514 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:59487 mo-1f014711:lxi-evntsvc ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:57048 mo-e2283343:lxi-evntsvc ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:51682 10.118.40.111:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12.s:794 derotvs3058s1.bb21.:nfs ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:56954 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:59114 vhbizxhanadbba802:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55473 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:42287 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:57241 mo-5e5b78546.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:52311 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp       40      0 localhost:55894         localhos:westec-connect ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:58610 10.118.40.108:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:40983 10.118.40.107:30415     ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:50436 ip-10-117-230-:www-http CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:48187 mo-5e5b78546.dc12.s:x11 ESTABLISHED
+tcp        1      0 mo-acbbaa0c3.dc12:55244 proxy.wdf.sap.:http-alt CLOSE_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:36953 10.118.196.252:palace-6 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55491 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:40703 mo-f5c7d0c45.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:42168 mo-209f59e5d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:58338 vhbizxhanadbba804:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:60236 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:47922 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:37671 sc12hdbbg001.rot.:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:58481 mo-89fda5f95.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:59115 vhbizxhanadbba802:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:50729 10.118.196.251:palace-6 TIME_WAIT
+tcp        0      0 mo-acbbaa0c3.dc12:60198 mo-c77e1ad35.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:48267 sc12hdbbj004.rot.:30415 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55439 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:60656 10.118.40.219:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12.s:836 10.117.224.19:nfs       ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:58613 10.118.40.108:30415     ESTABLISHED
+tcp        0      0 localhost:32891         localhos:westec-connect ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:58641 10.118.40.108:30415     ESTABLISHED
+tcp        0      0 mo-acbbaa0c3.dc12:55438 mo-9bf60935d.dc12.s:x11 ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ]         DGRAM                    190    @/org/freedesktop/systemd1/notify
+unix  2      [ ]         DGRAM                    122080854 @/org/freedesktop/systemd1/notify/bb8799fdd06c9161
+unix  2      [ ]         DGRAM                    11949  /run/systemd/shutdownd
+unix  6      [ ]         DGRAM                    204    /run/systemd/journal/socket
+unix  20     [ ]         DGRAM                    206    /dev/log
+unix  2      [ ]         DGRAM                    11989  /run/systemd/journal/syslog
+unix  2      [ ]         DGRAM                    1011914
+unix  3      [ ]         STREAM     CONNECTED     1011375 /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     74910312
+unix  3      [ ]         STREAM     CONNECTED     42436
+unix  2      [ ]         DGRAM                    43191
+unix  3      [ ]         STREAM     CONNECTED     40080  /var/lib/sss/pipes/private/sbus-monitor
+unix  2      [ ]         STREAM     CONNECTED     120815685
+unix  3      [ ]         STREAM     CONNECTED     1010236 /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    23579
+unix  3      [ ]         STREAM     CONNECTED     42519  /var/lib/sss/pipes/private/sbus-dp_sf.priv.7043
+unix  3      [ ]         STREAM     CONNECTED     19951
+unix  2      [ ]         DGRAM                    122089774
+unix  3      [ ]         STREAM     CONNECTED     23600
+unix  3      [ ]         STREAM     CONNECTED     1010281 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     42517  /var/lib/sss/pipes/private/sbus-monitor
+unix  3      [ ]         STREAM     CONNECTED     42410
+unix  2      [ ]         DGRAM                    101395014
+unix  3      [ ]         STREAM     CONNECTED     42428
+unix  3      [ ]         STREAM     CONNECTED     1010268 /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    40058
+unix  3      [ ]         STREAM     CONNECTED     42385
+unix  3      [ ]         STREAM     CONNECTED     18967
+unix  3      [ ]         STREAM     CONNECTED     42421
+unix  2      [ ]         STREAM     CONNECTED     1011163
+unix  3      [ ]         STREAM     CONNECTED     1010272
+unix  3      [ ]         STREAM     CONNECTED     42401
+unix  2      [ ]         DGRAM                    1012836
+unix  2      [ ]         DGRAM                    1001629
+unix  3      [ ]         STREAM     CONNECTED     1011377 /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     1010114
+unix  3      [ ]         STREAM     CONNECTED     807716 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     1000419
+unix  3      [ ]         STREAM     CONNECTED     1011380
+unix  2      [ ]         DGRAM                    19017
+unix  3      [ ]         STREAM     CONNECTED     21010  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     37179
+unix  2      [ ]         DGRAM                    122082107
+unix  3      [ ]         STREAM     CONNECTED     1000417
+unix  3      [ ]         STREAM     CONNECTED     42440
+unix  3      [ ]         STREAM     CONNECTED     1010243 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     42512
+unix  3      [ ]         STREAM     CONNECTED     42394
+unix  3      [ ]         STREAM     CONNECTED     42381
+unix  3      [ ]         STREAM     CONNECTED     1011376 /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42521  /var/lib/sss/pipes/private/sbus-monitor
+unix  2      [ ]         DGRAM                    1011160
+unix  2      [ ]         STREAM     CONNECTED     101402786
+unix  3      [ ]         STREAM     CONNECTED     41512  /var/lib/sss/pipes/private/sbus-dp_sf.priv.7043
+unix  3      [ ]         STREAM     CONNECTED     1008440
+unix  2      [ ]         DGRAM                    41352
+unix  3      [ ]         STREAM     CONNECTED     122086028 /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     41515
+unix  3      [ ]         STREAM     CONNECTED     42386
+unix  3      [ ]         STREAM     CONNECTED     1011912
+unix  3      [ ]         STREAM     CONNECTED     94955112
+unix  2      [ ]         DGRAM                    122080846
+unix  3      [ ]         STREAM     CONNECTED     42427
+unix  2      [ ]         STREAM     CONNECTED     122089775
+unix  2      [ ]         STREAM     CONNECTED     122089793
+unix  3      [ ]         DGRAM                    1001647
+unix  3      [ ]         STREAM     CONNECTED     42422
+unix  2      [ ]         STREAM     CONNECTED     36603
+unix  3      [ ]         STREAM     CONNECTED     122089808
+unix  3      [ ]         STREAM     CONNECTED     42400
+unix  3      [ ]         STREAM     CONNECTED     42397
+unix  3      [ ]         STREAM     CONNECTED     1010269 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     20724  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15281
+unix  3      [ ]         DGRAM                    12217
+unix  3      [ ]         STREAM     CONNECTED     43101
+unix  3      [ ]         STREAM     CONNECTED     17212  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42375
+unix  3      [ ]         STREAM     CONNECTED     42392
+unix  3      [ ]         STREAM     CONNECTED     922    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42409
+unix  3      [ ]         STREAM     CONNECTED     21198  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     1010280
+unix  2      [ ]         STREAM     CONNECTED     1000427
+unix  3      [ ]         STREAM     CONNECTED     42518  /var/lib/sss/pipes/private/sbus-monitor
+unix  3      [ ]         STREAM     CONNECTED     42439
+unix  3      [ ]         STREAM     CONNECTED     41459
+unix  2      [ ]         STREAM     CONNECTED     122084021
+unix  2      [ ]         DGRAM                    1010239
+unix  3      [ ]         STREAM     CONNECTED     94961516
+unix  3      [ ]         STREAM     CONNECTED     1010273 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     1010242
+unix  3      [ ]         STREAM     CONNECTED     19012  /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    1043783
+unix  3      [ ]         STREAM     CONNECTED     74915005 /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42434
+unix  2      [ ]         DGRAM                    1006551
+unix  3      [ ]         STREAM     CONNECTED     42431
+unix  3      [ ]         STREAM     CONNECTED     42391
+unix  3      [ ]         STREAM     CONNECTED     42398
+unix  3      [ ]         STREAM     CONNECTED     38264
+unix  2      [ ]         DGRAM                    122080849
+unix  3      [ ]         STREAM     CONNECTED     122086026
+unix  3      [ ]         DGRAM                    94955114
+unix  3      [ ]         STREAM     CONNECTED     1010256 /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     35400  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42403
+unix  3      [ ]         STREAM     CONNECTED     42418
+unix  3      [ ]         STREAM     CONNECTED     34733
+unix  3      [ ]         STREAM     CONNECTED     42412
+unix  3      [ ]         STREAM     CONNECTED     42404
+unix  3      [ ]         STREAM     CONNECTED     17456
+unix  2      [ ]         DGRAM                    1012830
+unix  3      [ ]         STREAM     CONNECTED     1010257
+unix  3      [ ]         STREAM     CONNECTED     807715
+unix  2      [ ]         STREAM     CONNECTED     807707
+unix  3      [ ]         STREAM     CONNECTED     21012  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42382
+unix  3      [ ]         STREAM     CONNECTED     42416
+unix  2      [ ]         DGRAM                    1008295
+unix  3      [ ]         STREAM     CONNECTED     122089809
+unix  3      [ ]         STREAM     CONNECTED     1012832
+unix  3      [ ]         DGRAM                    12216
+unix  3      [ ]         STREAM     CONNECTED     19023
+unix  3      [ ]         STREAM     CONNECTED     1006549
+unix  3      [ ]         STREAM     CONNECTED     42395
+unix  3      [ ]         STREAM     CONNECTED     42407
+unix  3      [ ]         STREAM     CONNECTED     42246  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     1010258 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     37178
+unix  3      [ ]         STREAM     CONNECTED     42389
+unix  3      [ ]         STREAM     CONNECTED     42383
+unix  3      [ ]         STREAM     CONNECTED     18240
+unix  3      [ ]         STREAM     CONNECTED     42430
+unix  3      [ ]         STREAM     CONNECTED     42376
+unix  3      [ ]         STREAM     CONNECTED     42373
+unix  3      [ ]         STREAM     CONNECTED     42433
+unix  3      [ ]         STREAM     CONNECTED     94961517
+unix  3      [ ]         DGRAM                    1001648
+unix  3      [ ]         STREAM     CONNECTED     41511
+unix  3      [ ]         STREAM     CONNECTED     1012828
+unix  3      [ ]         STREAM     CONNECTED     42424
+unix  3      [ ]         STREAM     CONNECTED     42522  /var/lib/sss/pipes/private/sbus-dp_sf.priv.7043
+unix  3      [ ]         STREAM     CONNECTED     43100
+unix  3      [ ]         STREAM     CONNECTED     42419
+unix  3      [ ]         DGRAM                    94955113
+unix  2      [ ]         STREAM     CONNECTED     101397164
+unix  3      [ ]         STREAM     CONNECTED     42413
+unix  2      [ ]         DGRAM                    41460
+unix  2      [ ]         STREAM     CONNECTED     122085978
+unix  3      [ ]         STREAM     CONNECTED     42425
+unix  3      [ ]         STREAM     CONNECTED     42380
+unix  3      [ ]         STREAM     CONNECTED     23599
+unix  3      [ ]         STREAM     CONNECTED     1006311 /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    18969
+unix  2      [ ]         STREAM     CONNECTED     122089787
+unix  3      [ ]         STREAM     CONNECTED     18155
+unix  3      [ ]         STREAM     CONNECTED     18968
+unix  3      [ ]         STREAM     CONNECTED     1010235
+unix  3      [ ]         STREAM     CONNECTED     42406
+unix  3      [ ]         STREAM     CONNECTED     1000420
+unix  3      [ ]         STREAM     CONNECTED     42388
+unix  3      [ ]         STREAM     CONNECTED     1010244 /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     21102  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42415
+unix  3      [ ]         STREAM     CONNECTED     1011964
+unix  3      [ ]         STREAM     CONNECTED     21002
+unix  3      [ ]         STREAM     CONNECTED     42437
+unix  3      [ ]         STREAM     CONNECTED     42374
+unix  3      [ ]         STREAM     CONNECTED     1000418
+unix  3      [ ]         STREAM     CONNECTED     94955111
+unix  2      [ ]         DGRAM                    43824
+mo-acbbaa0c3[sc12bcf01t]:~ #
+
+
