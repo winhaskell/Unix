@@ -21,14 +21,9 @@ It might sound like a bad thing, but it really isn’t — memory used by the ca
 
 System time, uptime and user sessions
 
-Tasks
-Tasks: 188 total,   1 running, 187 sleeping,   0 stopped,   0 zombie
 The “Tasks” section shows statistics regarding the processes running on your system.
 The “total” value is simply the total number of processes. For example, in the above screenshot, there are 188 processes running.
 To understand the rest of the values, we need a little bit of background on how the Linux kernel handles processes.
-
-
- 
 
 The CPU usage section shows the percentage of CPU time spent on various tasks. 
 The us value is the time the CPU spends executing processes in userspace. Similarly, 
@@ -50,10 +45,6 @@ and the time spent on handling hardware and software interrupts are given by hi 
 In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). 
 The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. 
 The amount of time lost in this way is the “steal” time, shown as st.
-
-
-
- 
 
 The load average section represents the average “load” over one, five and fifteen minutes. 
 “Load” is a measure of the amount of computational work a system performs. 
@@ -79,13 +70,7 @@ this article covers all the technical details.
 
 
 https://www.booleanworld.com/guide-linux-top-command/
-
-
-
-
 https://www.youtube.com/watch?v=y_vAFd7Uk5U
-
-
 
 
 Understanding top’s interface: the task area
@@ -128,7 +113,5 @@ In most of the examples below, you have to press a key while top is running. Kee
 — so if you press “k” while Caps Lock is on, you have actually pressed a “K”, and the command won’t work, or do something else entirely.
 
 
-
- 
 https://www.lifewire.com/linux-top-command-2201163
 How To Use The Linux Top Command To Show Running Processes
