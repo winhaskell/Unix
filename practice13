@@ -270,25 +270,10 @@ export
 输出跟字符串oracle匹配的环境变量
 
 $ export | grep ORCALE
-declare -x ORACLE_BASE="/u01/app/oracle"
-declare -x ORACLE_HOME="/u01/app/oracle/product/10.2.0"
-declare -x ORACLE_SID="med"
-declare -x ORACLE_TERM="xterm"
+ 
 设置全局环境变量
 
-$ export ORACLE_HOME=/u01/app/oracle/product/10.2.0
-
-mo-acbbaa0c3[sc12bcf01t]:~ #  ls -lh
-total 440K
-lrwxrwxrwx 1 i999999 domain users   12  Dec 12 12:43 adjtimex -> /bin/busybox
--rw-r--r-- 1 root    bin           13K  Dec 10 10:17 -aux --sort -pcpu
-drwxr-xr-x 2 i999999  domain users 4.0K Dec  7 19:35 bin
--rw-r--r-- 1 i999999  domain users 382K Apr 28  2001 download?source=files
--rw-r--r-- 1 i999999  domain users    0 Dec 12 14:10 test
-drwxr-xr-x 4 i999999  domain users 4.0K Dec 12 13:05 tmp
--rw-r--r-- 1 i999999  domain users  12K Dec 10 11:12 tory | lessq
--rw-r--r-- 1 root    bin           14K  Dec 20 09:51 -u pungki
-
+ 
 
 
 ps
@@ -308,12 +293,7 @@ free
 默认情况下free会以字节为单位输出内存的使用量
 
 
-mo-acbbaa0c3[tygewfwqdwd]:~ # free
-             total       used       free     shared    buffers     cached
-Mem:      49031408   39591944    9439464    2043208     888980   10851456
--/+ buffers/cache:   27851508   21179900
-Swap:      3129340      83020    3046320
-mo-acbbaa0c3[sc12bcf01t]:~ #
+ 
 
 
 
