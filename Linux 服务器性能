@@ -4,125 +4,7 @@ https://www.infoq.cn/article/2015%2F12%2Flinux-performance
 通过执行以下命令，可以在 1 分钟内对系统资源使用情况有个大致的了解。
 
 uptime
-monjnz-acbbaa0ck[uuuuuu]:~ # uptime
- 07:37am  up 80 days 18:50,  1 user,  load average: 0.26, 0.26, 0.19
-monjnz-acbbaa0ck[uuuuuu]:~ #
-
-
-dmesg | tail
-vmstat 1
-mpstat -P ALL 1
-
-monjnz-acbbaa0ck[sc12bcf01t]:~ # mpstat -P ALL 1
-Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/02/2019      _x86_64_        (8 CPU)
-
-07:41:43 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
-07:41:44 AM  all    0.88    0.00    0.13    0.00    0.00    0.00    0.00    0.00    0.00   98.99
-07:41:44 AM    0    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
-07:41:44 AM    1    4.08    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00   95.92
-07:41:44 AM    2    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
-07:41:44 AM    3    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
-07:41:44 AM    4    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
-07:41:44 AM    5    1.96    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00   98.04
-07:41:44 AM    6    1.01    0.00    0.00    0.00    0.00    1.01    0.00    0.00    0.00   97.98
-07:41:44 AM    7    1.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00   99.00
-
-
-pidstat 1
-
-monjnz-acbbaa0ck[sc12bcf01t]:~ # pidstat 1
-Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/02/2019      _x86_64_        (8 CPU)
-
-07:43:10 AM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
-07:43:11 AM  1004     15077    9.90    0.00    0.00    9.90     6  java
-
-07:43:11 AM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
-07:43:12 AM 708933590       774    0.00    1.00    0.00    1.00     6  pidstat
-07:43:12 AM  1004     15077    3.00    1.00    0.00    4.00     6  java
-
-07:43:12 AM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
-07:43:13 AM 708933590       774    0.00    1.00    0.00    1.00     6  pidstat
-07:43:13 AM  1004     15077    1.00    1.00    0.00    2.00     6  java
-07:43:13 AM     0     39608    1.00    0.00    0.00    1.00     5  filebeat
-
-07:43:13 AM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
-07:43:14 AM 708933590       774    1.00    1.00    0.00    2.00     6  pidstat
-07:43:14 AM  1004     15077   46.00    2.00    0.00   48.00     6  java
-
-07:43:14 AM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
-07:43:15 AM 708933590       774    0.00    1.00    0.00    1.00     6  pidstat
-07:43:15 AM     0      1792    1.00    0.00    0.00    1.00     0  vmtoolsd
-07:43:15 AM  1004     15077   24.00    1.00    0.00   25.00     6  java
-
-
-
-
-iostat -xz 1
-
-monjnz-acbbaa0ck[sc12bcf01t]:~ # iostat -xz 1
-Linux 3.12.69-60.64.35-default (monjnz-acbbaa0ck.dc12.saas.sap.corp)        01/02/2019      _x86_64_        (8 CPU)
-
-avg-cpu:  %user   %nice %system %iowait  %steal   %idle
-           4.61    0.00    0.37    0.02    0.00   95.00
-
-Device:         rrqm/s   wrqm/s     r/s     w/s    rkB/s    wkB/s avgrq-sz avgqu-sz   await r_await w_await  svctm  %util
-fd0               0.00     0.00    0.00    0.00     0.01     0.00     8.00     0.00   27.49   27.49    0.00  27.49   0.00
-sdb               0.00     0.06    0.00    0.12     0.23     1.09    21.14     0.00    1.15    1.51    1.14   0.32   0.00
-sda               0.01     3.35    0.01    2.35     0.81    24.35    21.33     0.00    0.54    1.10    0.53   0.34   0.08
-sdc               0.00     4.42    0.04    1.16     0.53    25.02    42.53     0.00    3.81    1.22    3.89   0.23   0.03
-dm-0              0.00     0.00    0.04    5.59     0.53    25.02     9.08     0.10   18.18    1.24   18.29   0.05   0.03
-dm-1              0.00     0.00    0.00    0.00     0.00     0.00     8.00     0.00    4.13    1.03    6.40   0.54   0.00
-dm-2              0.00     0.00    0.00    1.42     0.05     5.76     8.18     0.00    0.49    0.89    0.49   0.08   0.01
-dm-3              0.00     0.00    0.01    0.05     0.35     0.22    18.74     0.01  121.12    1.01  139.83   0.08   0.00
-dm-4              0.00     0.00    0.00    0.00     0.01     0.01     8.00     0.00   29.10    7.70   46.16   0.24   0.00
-dm-5              0.00     0.00    0.00    1.34     0.52     7.00    11.16     0.00    2.86    1.80    2.86   0.21   0.03
-dm-6              0.00     0.00    0.00    3.06     0.08    12.44     8.18     0.00    0.78    1.11    0.78   0.15   0.05
-dm-7              0.00     0.00    0.00    0.00     0.00     0.00     7.99     0.00    0.17    0.17    0.00   0.14   0.00
-
-
-
-
-
-free -m
-sar -n DEV 1
-sar -n TCP,ETCP 1
-
-
-top
-monjnz-acbbaa0ck[uuuuuu]:~ # top
-top - 07:54:25 up 80 days, 19:07,  1 user,  load average: 0.04, 0.08, 0.13
-Tasks: 188 total,   1 running, 187 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
-KiB Mem:  49031408 total, 40906036 used,  8125372 free,   891548 buffers
-KiB Swap:  3129340 total,    83020 used,  3046320 free. 11094408 cached Mem
-
-  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
- 7043 root      20   0  379732  57220   3796 S 6.250 0.117  77:31.13 sssd_be
-15077 sfuser    20   0 43.598g 0.026t  19128 S 6.250 57.14   1478:28 java
-    1 root      20   0  181844   4928   2184 S 0.000 0.010   8:27.48 systemd
-    2 root      20   0       0      0      0 S 0.000 0.000   0:01.12 kthreadd
-    3 root      20   0       0      0      0 S 0.000 0.000   5:47.70 ksoftirqd/0
-    5 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/0:0H
-    7 root      rt   0       0      0      0 S 0.000 0.000   0:22.26 migration/0
-    8 root      20   0       0      0      0 S 0.000 0.000   0:00.00 rcu_bh
-    9 root      20   0       0      0      0 S 0.000 0.000  35:19.44 rcu_sched
-   10 root      rt   0       0      0      0 S 0.000 0.000   0:10.46 watchdog/0
-   11 root      rt   0       0      0      0 S 0.000 0.000   0:08.99 watchdog/1
-   12 root      rt   0       0      0      0 S 0.000 0.000   0:22.74 migration/1
-   13 root      20   0       0      0      0 S 0.000 0.000   5:39.16 ksoftirqd/1
-   15 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/1:0H
-   16 root      rt   0       0      0      0 S 0.000 0.000   0:08.69 watchdog/2
-   17 root      rt   0       0      0      0 S 0.000 0.000   0:22.68 migration/2
-   18 root      20   0       0      0      0 S 0.000 0.000   5:31.32 ksoftirqd/2
-   20 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/2:0H
-   21 root      rt   0       0      0      0 S 0.000 0.000   0:08.34 watchdog/3
-   22 root      rt   0       0      0      0 S 0.000 0.000   0:22.63 migration/3
-
-mo-acbbaa0c3[sc12bcf01t]:~ # who
-uuuuuu  pts/0        2019-01-02 07:11 (172.16.28.194)
-
-%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
-
+ 
 The “memory” section shows information regarding the memory usage of the system. The lines marked “Mem” and “Swap” show information
 about RAM and swap space respectively. Simply put, a swap space is a part of the hard disk that is used like RAM. When the RAM usage
 gets nearly full, infrequently used regions of the RAM are written into the swap space, ready to be retrieved later when needed. 
@@ -146,8 +28,7 @@ The “total” value is simply the total number of processes. For example, in t
 To understand the rest of the values, we need a little bit of background on how the Linux kernel handles processes.
 
 
-CPU usage
-%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+ 
 
 The CPU usage section shows the percentage of CPU time spent on various tasks. 
 The us value is the time the CPU spends executing processes in userspace. Similarly, 
@@ -172,8 +53,7 @@ The amount of time lost in this way is the “steal” time, shown as st.
 
 
 
-Load average
-load average: 0.04, 0.08, 0.13
+ 
 
 The load average section represents the average “load” over one, five and fifteen minutes. 
 “Load” is a measure of the amount of computational work a system performs. 
@@ -249,55 +129,6 @@ In most of the examples below, you have to press a key while top is running. Kee
 
 
 
-mo-acbbaa0c3[sc12bcf01t]:~ # top -o %CPU
-top - 09:35:21 up 80 days, 20:48,  1 user,  load average: 0.68, 0.57, 0.37
-Tasks: 189 total,   1 running, 188 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  4.6 us,  0.3 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
-KiB Mem:  49031408 total, 40983460 used,  8047948 free,   891560 buffers
-KiB Swap:  3129340 total,    83020 used,  3046320 free. 11143464 cached Mem
-
-  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-    1 root      20   0  181844   4928   2184 S 0.000 0.010   8:28.06 systemd
-    2 root      20   0       0      0      0 S 0.000 0.000   0:01.12 kthreadd
-    3 root      20   0       0      0      0 S 0.000 0.000   5:47.88 ksoftirqd/0
-    5 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/0:0H
-    7 root      rt   0       0      0      0 S 0.000 0.000   0:22.28 migration/0
-    8 root      20   0       0      0      0 S 0.000 0.000   0:00.00 rcu_bh
-    9 root      20   0       0      0      0 S 0.000 0.000  35:21.05 rcu_sched
-   10 root      rt   0       0      0      0 S 0.000 0.000   0:10.47 watchdog/0
-   11 root      rt   0       0      0      0 S 0.000 0.000   0:09.00 watchdog/1
-   12 root      rt   0       0      0      0 S 0.000 0.000   0:22.76 migration/1
-
-
-
-
-mo-acbbaa0c3[sc12bcf01t]:~ # top -H
-top - 09:36:58 up 80 days, 20:49,  1 user,  load average: 0.39, 0.50, 0.36
-Threads: 777 total,   1 running, 776 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.4 us,  0.1 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-KiB Mem:  49031408 total, 40983328 used,  8048080 free,   891560 buffers
-KiB Swap:  3129340 total,    83020 used,  3046320 free. 11143548 cached Mem
-
-  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-  768 i356338   20   0   30272   2404   1280 R 0.664 0.005   0:00.02 top
-15094 sfuser    20   0 43.618g 0.026t  19128 S 0.664 57.20  67:20.51 VM Thread
-15504 sfuser    20   0 43.618g 0.026t  19128 S 0.664 57.20  81:33.66 Java Main Threa
-19417 sfuser    20   0 43.618g 0.026t  19128 S 0.664 57.20  19:47.65 catalina-exec-8
-15790 sfuser    20   0 43.618g 0.026t  19128 S 0.332 57.20   7:38.00 pool-14-thread-
-15791 sfuser    20   0 43.618g 0.026t  19128 S 0.332 57.20  24:07.25 pool-15-thread-
-15845 sfuser    20   0 43.618g 0.026t  19128 S 0.332 57.20   5:29.47 Thread-2 (Horne
-19451 sfuser    20   0 43.618g 0.026t  19128 S 0.332 57.20  10:00.73 Optier-Applicat
-39222 sfuser    20   0 43.618g 0.026t  19128 S 0.332 57.20   1:19.95 com.successfact
-    1 root      20   0  181844   4928   2184 S 0.000 0.010   8:28.06 systemd
-    2 root      20   0       0      0      0 S 0.000 0.000   0:01.12 kthreadd
-    3 root      20   0       0      0      0 S 0.000 0.000   5:47.88 ksoftirqd/0
-    5 root       0 -20       0      0      0 S 0.000 0.000   0:00.00 kworker/0:0H
-    7 root      rt   0       0      0      0 S 0.000 0.000   0:22.28 migration/0
-    8 root      20   0       0      0      0 S 0.000 0.000   0:00.00 rcu_bh
-    9 root      20   0       0      0      0 S 0.000 0.000  35:21.06 rcu_sched
-   10 root      rt   0       0      0      0 S 0.000 0.000   0:10.47 watchdog/0
-   11 root      rt   0       0      0      0 S 0.000 0.000   0:09.00 watchdog/1
-
-
+ 
 https://www.lifewire.com/linux-top-command-2201163
 How To Use The Linux Top Command To Show Running Processes
