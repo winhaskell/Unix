@@ -1,0 +1,10 @@
+The Apache Web server is started by a command when the Web server boots up. But the user who starts Apache is often 
+a restricted and unprivileged user, such as nobody or apache or www-data. 
+This is for security reasons, to prevent someone from hacking into the website and then gaining control of the whole server.
+You can find out who that user is by running the command below and looking in the first column. 
+The ps aux command shows all of the processes running on the server, and grep shows only processes that contain the word “apache.”
+
+ps aux | grep apache
+
+*.apache.*
+
