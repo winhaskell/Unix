@@ -1,0 +1,6 @@
+How to check OS and version using a Linux command [duplicate]
+$ uname -a
+
+netstat -l on the debian server 
+
+ps -efl
