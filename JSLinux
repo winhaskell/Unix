@@ -1,0 +1,20 @@
+https://bellard.org/jslinux/
+
+
+JSLinux
+Run Linux or other Operating Systems in your browser!
+The following emulated systems are available:
+
+CPU	OS (Distribution)	User
+ 
+x86	Linux 4.12.0 (Buildroot)	Console	Yes	click here	url	
+x86	Linux 4.12.0 (Buildroot)	X Window	Yes	click here	url	Right mouse button for the menu.
+x86	Windows 2000	Graphical	No	click here	url	Disclaimer.
+x86	FreeDOS	VGA Text	No	click here	url	
+riscv64	Linux 4.15.0 (Buildroot)	Console	Yes	click here	url	
+riscv64	Linux 4.15.0 (Buildroot)	X Window	Yes	click here	url	Right mouse button for the menu.
+riscv64	Linux 4.15.0 (Fedora 29)	Console	Yes	click here	url	Warning: longer boot time.
+riscv64	Linux 4.15.0 (Fedora 29)	X Window	Yes	click here	url	Warning: longer boot time. Right mouse button for the menu.
+
+© 2011-2018 Fabrice Bellard  
+
