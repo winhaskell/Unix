@@ -1,0 +1,20 @@
+The rise of UNIX philosophy
+
+Ken Thomson and the developers of UNIX established a set of cultural norms for developing software popularly 
+known as the “UNIX philosophy.”  It emphasizes building simple, modular, and extensible software that can be
+easily maintained. The UNIX philosophy is summarized as follows:
+
+Small is beautiful.
+Make each program do one thing well.
+To do a new job, build afresh rather than complicate old programs by adding new “features”.
+Expect the output of every program to become the input to another, as yet unknown, program.
+Write programs to work together.
+Write programs to handle text streams, because that is a universal interface.
+Build a prototype as soon as possible.
+Choose portability over efficiency.
+
+
+
+
+
+
